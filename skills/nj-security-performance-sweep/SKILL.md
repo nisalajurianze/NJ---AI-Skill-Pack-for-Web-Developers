@@ -1,13 +1,13 @@
 ---
 name: nj-security-performance-sweep
-description: Combined security and performance review workflow for Nisal's full-stack apps. Use when the user asks for security, performance, speed, optimization, production hardening, "podi podi than pawa hodata balanna", audits, API/web risks, Lighthouse, database hot paths, bundle size, auth, payments, uploads, or compliance-sensitive checks.
+description: Combined security and performance review workflow for the developer's full-stack apps. Use when the user asks for security, performance, speed, optimization, production hardening, "podi podi than pawa hodata balanna", audits, API/web risks, Lighthouse, database hot paths, bundle size, auth, payments, uploads, or compliance-sensitive checks.
 ---
 
 # NJ Security Performance Sweep
 
 ## Purpose
 
-Combined security and performance review workflow for Nisal's full-stack apps. Use when the user asks for security, performance, speed, optimization, production hardening, "podi podi than pawa hodata balanna", audits, API/web risks, Lighthouse, database hot paths, bundle size, auth, payments, uploads, or compliance-sensitive checks.
+Combined security and performance review workflow for the developer's full-stack apps. Use when the user asks for security, performance, speed, optimization, production hardening, "podi podi than pawa hodata balanna", audits, API/web risks, Lighthouse, database hot paths, bundle size, auth, payments, uploads, or compliance-sensitive checks.
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**

@@ -1,13 +1,13 @@
 ---
 name: nj-test-failure-fixer
-description: Focused debugging workflow for failing tests, builds, linters, CI, typechecks, Playwright/Vitest/Jest errors, API smoke failures, Vercel build failures, Railway/Docker issues, and "test fail wenawa fix karanna" requests in Nisal's projects.
+description: Focused debugging workflow for failing tests, builds, linters, CI, typechecks, Playwright/Vitest/Jest errors, API smoke failures, Vercel build failures, Railway/Docker issues, and "test fail wenawa fix karanna" requests in the developer's projects.
 ---
 
 # NJ Test Failure Fixer
 
 ## Purpose
 
-Focused debugging workflow for failing tests, builds, linters, CI, typechecks, Playwright/Vitest/Jest errors, API smoke failures, Vercel build failures, Railway/Docker issues, and "test fail wenawa fix karanna" requests in Nisal's projects.
+Focused debugging workflow for failing tests, builds, linters, CI, typechecks, Playwright/Vitest/Jest errors, API smoke failures, Vercel build failures, Railway/Docker issues, and "test fail wenawa fix karanna" requests in the developer's projects.
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**

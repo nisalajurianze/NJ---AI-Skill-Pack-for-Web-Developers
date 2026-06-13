@@ -1,13 +1,13 @@
 ---
 name: nj-roadmap-keeper
-description: Roadmap, checklist, goal, and small-detail tracking workflow for Nisal's long coding/product tasks. Use when the user gives many requirements, says "hama dema", "podi podi than pawa", "roadmap", "complete list", "100% iwara wenakam", or wants Codex to keep working without losing small tasks.
+description: Roadmap, checklist, goal, and small-detail tracking workflow for the developer's long coding/product tasks. Use when the user gives many requirements, says "hama dema", "podi podi than pawa", "roadmap", "complete list", "100% iwara wenakam", or wants Codex to keep working without losing small tasks.
 ---
 
 # NJ Roadmap Keeper
 
 ## Purpose
 
-Roadmap, checklist, goal, and small-detail tracking workflow for Nisal's long coding/product tasks. Use when the user gives many requirements, says "hama dema", "podi podi than pawa", "roadmap", "complete list", "100% iwara wenakam", or wants Codex to keep working without losing small tasks.
+Roadmap, checklist, goal, and small-detail tracking workflow for the developer's long coding/product tasks. Use when the user gives many requirements, says "hama dema", "podi podi than pawa", "roadmap", "complete list", "100% iwara wenakam", or wants Codex to keep working without losing small tasks.
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**

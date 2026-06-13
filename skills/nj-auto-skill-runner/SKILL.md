@@ -1,13 +1,13 @@
 ---
 name: nj-auto-skill-runner
-description: Automatic Codex skill selection and skill-use workflow for Nisal's tasks. Use when the user says "auto skill use karanna", "skills automatically use karanna", "wenam skill ekak one", "best skills tika use karanna", "hama skill ekama balala right ewa use karanna", or gives a broad coding/product/API/frontend/deploy/security task where Codex should proactively choose, load, and coordinate the right skills without waiting for the user to name them.
+description: Automatic Codex skill selection and skill-use workflow for the developer's tasks. Use when the user says "auto skill use karanna", "skills automatically use karanna", "wenam skill ekak one", "best skills tika use karanna", "hama skill ekama balala right ewa use karanna", or gives a broad coding/product/API/frontend/deploy/security task where Codex should proactively choose, load, and coordinate the right skills without waiting for the user to name them.
 ---
 
 # NJ Auto Skill Runner
 
 ## Purpose
 
-Automatic Codex skill selection and skill-use workflow for Nisal's tasks. Use when the user says "auto skill use karanna", "skills automatically use karanna", "wenam skill ekak one", "best skills tika use karanna", "hama skill ekama balala right ewa use karanna", or gives a broad coding/product/API/frontend/deploy/security task where Codex should proactively choose, load, and coordinate the right skills without waiting for the user to name them.
+Automatic Codex skill selection and skill-use workflow for the developer's tasks. Use when the user says "auto skill use karanna", "skills automatically use karanna", "wenam skill ekak one", "best skills tika use karanna", "hama skill ekama balala right ewa use karanna", or gives a broad coding/product/API/frontend/deploy/security task where Codex should proactively choose, load, and coordinate the right skills without waiting for the user to name them.
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
@@ -21,7 +21,7 @@ Use this skill to turn a broad user request into the right active skill set. Cho
 
 1. Restate the user's real objective in one short line.
 2. Select one primary skill and up to four companion skills that materially improve the outcome.
-3. Prefer Nisal custom skills first, then plugin skills, then generic platform skills.
+3. Prefer the developer custom skills first, then plugin skills, then generic platform skills.
 4. Load each selected skill's `SKILL.md` only when its instructions are needed for the current turn.
 5. Announce the selected skills and why in one concise update.
 6. Execute the task. Do not stop at routing unless the user asked only for a routing decision.

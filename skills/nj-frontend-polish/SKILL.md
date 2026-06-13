@@ -1,13 +1,13 @@
 ---
 name: nj-frontend-polish
-description: Frontend polish, UI quality, responsive design, UX, accessibility, and browser verification workflow for Nisal's React, Vite, Next.js, ecommerce, SaaS, pharmacy, restaurant, admin dashboard, landing page, and portfolio work. Use when the user asks to make UI "superb", beautiful, professional, faster, mobile-friendly, or visually verified.
+description: Frontend polish, UI quality, responsive design, UX, accessibility, and browser verification workflow for the developer's React, Vite, Next.js, ecommerce, SaaS, pharmacy, restaurant, admin dashboard, landing page, and portfolio work. Use when the user asks to make UI "superb", beautiful, professional, faster, mobile-friendly, or visually verified.
 ---
 
 # NJ Frontend Polish
 
 ## Purpose
 
-Frontend polish, UI quality, responsive design, UX, accessibility, and browser verification workflow for Nisal's React, Vite, Next.js, ecommerce, SaaS, pharmacy, restaurant, admin dashboard, landing page, and portfolio work. Use when the user asks to make UI "superb", beautiful, professional, faster, mobile-friendly, or visually verified.
+Frontend polish, UI quality, responsive design, UX, accessibility, and browser verification workflow for the developer's React, Vite, Next.js, ecommerce, SaaS, pharmacy, restaurant, admin dashboard, landing page, and portfolio work. Use when the user asks to make UI "superb", beautiful, professional, faster, mobile-friendly, or visually verified.
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**

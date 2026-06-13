@@ -1,13 +1,13 @@
 ---
 name: nj-deploy-guardian
-description: Deployment and release-safety workflow for Nisal's Vercel, Railway, Render, Cloudflare Workers, Docker, GitHub Actions, env vars, domains, production/preview deployments, and "deploy karanna", "production ready", "release fix", or CI/CD tasks.
+description: Deployment and release-safety workflow for the developer's Vercel, Railway, Render, Cloudflare Workers, Docker, GitHub Actions, env vars, domains, production/preview deployments, and "deploy karanna", "production ready", "release fix", or CI/CD tasks.
 ---
 
 # NJ Deploy Guardian
 
 ## Purpose
 
-Deployment and release-safety workflow for Nisal's Vercel, Railway, Render, Cloudflare Workers, Docker, GitHub Actions, env vars, domains, production/preview deployments, and "deploy karanna", "production ready", "release fix", or CI/CD tasks.
+Deployment and release-safety workflow for the developer's Vercel, Railway, Render, Cloudflare Workers, Docker, GitHub Actions, env vars, domains, production/preview deployments, and "deploy karanna", "production ready", "release fix", or CI/CD tasks.
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**

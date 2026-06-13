@@ -1,12 +1,12 @@
 ---
 name: nj-work-pack
-description: Coordinated execution pack for Nisal's coding, product, design, deployment, security, API, code-quality, auto-planning, auto-skill-selection, plugin, specialist-agent, and AI-development work. Use when the user asks to inspect all repos, use previous work, create or use special agents/skills, automatically use the right skills, auto-plan work, improve code quality, work faster, reduce credit usage, improve performance, use plugins/connectors, get external AI support such as Opus 4.8, increase thinking quality or creativity, use GitHub/Vercel/Cloudflare/Figma/OpenAI capabilities, use Claude Code/opencode-style CLIs, or run a large roadmap to completion.
+description: Coordinated execution pack for the developer's coding, product, design, deployment, security, API, code-quality, auto-planning, auto-skill-selection, plugin, specialist-agent, and AI-development work. Use when the user asks to inspect all repos, use previous work, create or use special agents/skills, automatically use the right skills, auto-plan work, improve code quality, work faster, reduce credit usage, improve performance, use plugins/connectors, get external AI support such as Opus 4.8, increase thinking quality or creativity, use GitHub/Vercel/Cloudflare/Figma/OpenAI capabilities, use Claude Code/opencode-style CLIs, or run a large roadmap to completion.
 ---
 
 # NJ Work Pack
 
 ## Purpose
-Coordinated execution pack for Nisal's coding, product, design, deployment, security, API, code-quality, auto-planning, auto-skill-selection, plugin, specialist-agent, and AI-development work. Use when the user asks to inspect all repos, use previous work, create or use special agents/skills, automatically use the right skills, auto-plan work, improve code quality, work faster, reduce credit usage, improve performance, use plugins/connectors, get external AI support such as Opus 4.8, increase thinking quality or creativity, use GitHub/Vercel/Cloudflare/Figma/OpenAI capabilities, use Claude Code/opencode-style CLIs, or run a large roadmap to completion.
+Coordinated execution pack for the developer's coding, product, design, deployment, security, API, code-quality, auto-planning, auto-skill-selection, plugin, specialist-agent, and AI-development work. Use when the user asks to inspect all repos, use previous work, create or use special agents/skills, automatically use the right skills, auto-plan work, improve code quality, work faster, reduce credit usage, improve performance, use plugins/connectors, get external AI support such as Opus 4.8, increase thinking quality or creativity, use GitHub/Vercel/Cloudflare/Figma/OpenAI capabilities, use Claude Code/opencode-style CLIs, or run a large roadmap to completion.
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
@@ -16,7 +16,7 @@ Coordinated execution pack for Nisal's coding, product, design, deployment, secu
 
 ## Goal
 
-Use this pack to combine installed Codex skills, local CLIs, and connector-aware workflows into a practical execution mode for Nisal's projects. Favor useful shipped work over ceremony, but verify before claiming completion.
+Use this pack to combine installed Codex skills, local CLIs, and connector-aware workflows into a practical execution mode for the developer's projects. Favor useful shipped work over ceremony, but verify before claiming completion.
 
 ## Default Operating Mode
 
@@ -25,7 +25,7 @@ Use this pack to combine installed Codex skills, local CLIs, and connector-aware
 3. Use `$nj-auto-planner` when the user asks for auto planning, a roadmap, a goal plan, or the task has multiple meaningful steps.
 4. Use `$nj-specialist-router` when the user asks for special agents, many skills, "hama dema balala", or broad multi-domain execution.
 5. Use `$nj-plugin-ai-orchestrator` when the user asks to use plugins/connectors or external AI support such as Opus 4.8, Claude Code, OpenCode, or other models.
-6. Use `$nj-repo-memory` when the work touches Nisal's previous repos or prior Codex project context.
+6. Use `$nj-repo-memory` when the work touches the developer's previous repos or prior Codex project context.
 7. Use `$nj-fast-work-loop` when the user asks to work quickly, reduce cost, or avoid wasting time.
 8. Use `$run-to-completion` and `$nj-large-prompt-phased-executor` immediately and automatically when the user gives a large roadmap, long prompt, or says to continue until finished.
 9. Use `$opus-4-8-mode` when the user asks for Claude Opus, Opus 4.8, "best model", "deep thinking", or Opus-style work.
@@ -50,7 +50,7 @@ Use these custom skills before broader generic work when their trigger matches:
 - `$nj-plugin-ai-orchestrator`: route plugin/connector use and external AI support.
 - `$nj-code-quality-guardian`: improve maintainability, correctness, architecture, and tests.
 - `$nj-fast-work-loop`: speed up work with parallel inspection and smallest useful verification.
-- `$nj-repo-memory`: apply known context for Nisal repos and prior Codex work.
+- `$nj-repo-memory`: apply known context for the developer repos and prior Codex work.
 - `$nj-api-hardener`: harden API/backend/auth/database/webhook/upload/payment flows.
 - `$nj-frontend-polish`: improve UI/UX, responsiveness, accessibility, and browser-verified polish.
 - `$nj-test-failure-fixer`: debug failing tests, builds, typechecks, CI, and smoke checks.

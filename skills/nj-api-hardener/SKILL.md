@@ -1,13 +1,13 @@
 ---
 name: nj-api-hardener
-description: Backend/API hardening workflow for Nisal's Node, Express, Next.js API, server, webhook, auth, database, upload, payment, email, Cloudinary, Resend, PayHere, SMS, Redis, Mongo, and integration tasks. Use when improving API reliability, security, validation, performance, tests, or "backend eka superb karanna".
+description: Backend/API hardening workflow for the developer's Node, Express, Next.js API, server, webhook, auth, database, upload, payment, email, Cloudinary, Resend, PayHere, SMS, Redis, Mongo, and integration tasks. Use when improving API reliability, security, validation, performance, tests, or "backend eka superb karanna".
 ---
 
 # NJ API Hardener
 
 ## Purpose
 
-Backend/API hardening workflow for Nisal's Node, Express, Next.js API, server, webhook, auth, database, upload, payment, email, Cloudinary, Resend, PayHere, SMS, Redis, Mongo, and integration tasks. Use when improving API reliability, security, validation, performance, tests, or "backend eka superb karanna".
+Backend/API hardening workflow for the developer's Node, Express, Next.js API, server, webhook, auth, database, upload, payment, email, Cloudinary, Resend, PayHere, SMS, Redis, Mongo, and integration tasks. Use when improving API reliability, security, validation, performance, tests, or "backend eka superb karanna".
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
@@ -42,7 +42,7 @@ Use `$api-goal-runner` as a companion when the user frames the API work as a goa
 4. Patch the smallest layer that owns the bug.
 5. Run targeted tests, then typecheck/build if relevant.
 
-## Common Nisal Risks
+## Common the developer Risks
 
 - Stock/order race conditions in ecommerce/pharmacy flows.
 - Checkout without real stock or price validation.

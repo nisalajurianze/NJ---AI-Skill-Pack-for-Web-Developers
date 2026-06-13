@@ -1,13 +1,13 @@
 ---
 name: nj-code-quality-guardian
-description: Code quality improvement workflow for Nisal's repositories. Use when the user asks to improve code quality, "code quality eka wadi karanna", clean architecture, refactor, remove bugs, make code superb, professionalize a repo, reduce technical debt, improve maintainability, or review/repair frontend, backend, shared packages, tests, and configs.
+description: Code quality improvement workflow for the developer's repositories. Use when the user asks to improve code quality, "code quality eka wadi karanna", clean architecture, refactor, remove bugs, make code superb, professionalize a repo, reduce technical debt, improve maintainability, or review/repair frontend, backend, shared packages, tests, and configs.
 ---
 
 # NJ Code Quality Guardian
 
 ## Purpose
 
-Code quality improvement workflow for Nisal's repositories. Use when the user asks to improve code quality, "code quality eka wadi karanna", clean architecture, refactor, remove bugs, make code superb, professionalize a repo, reduce technical debt, improve maintainability, or review/repair frontend, backend, shared packages, tests, and configs.
+Code quality improvement workflow for the developer's repositories. Use when the user asks to improve code quality, "code quality eka wadi karanna", clean architecture, refactor, remove bugs, make code superb, professionalize a repo, reduce technical debt, improve maintainability, or review/repair frontend, backend, shared packages, tests, and configs.
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
