@@ -21,21 +21,19 @@ Use this skill to raise code quality without drifting into unrelated rewrites. I
 
 ## Playbook Enforcement
 
-You must strictly enforce and follow the guidelines and checklists from standard Web Project Quality best practices:
+Focus strictly on code architecture, refactoring, and code hygiene. For detailed domain logic implementation, delegate to companion skills:
+- For secure API contracts, Zod schemas, database optimization, and endpoint security, defer to the specialized `$nj-api-hardener` skill.
+- For UI polish, mobile layouts, loading states, and visual polish, defer to the specialized `$nj-frontend-polish` skill.
 
-### 1. Frontend & Form Quality
-- **Validation**: All inputs must have client & server-side validation using Zod schemas and React Hook Form. Show clear field-level errors and submit loading states.
-- **Image Performance**: Images must use WebP/AVIF formats, have explicit aspect ratio container dimensions to prevent Cumulative Layout Shift (CLS), and be lazy-loaded unless above-the-fold.
-- **Visual Smoothness**: Keep touch/hover transitions GPU-accelerated (using `transform` and `opacity` properties only). Avoid animating layout properties (`width`, `height`, `margin`).
+### 1. Refactoring & Modular Design
+- **Single Responsibility**: Extract logical segments from monolithic files (keep components under 250 lines).
+- **Abstractions**: Follow established local patterns. Do not write premature abstractions or introduce external libraries unless explicitly requested.
+- **DRY & SOLID**: Identify copy-paste logic and consolidate helper utilities cleanly into `/utils` or `/lib`.
 
-### 2. API & Backend Contracts
-- **Response Structure**: Return uniform envelopes: `{ data: {...}, meta: { page, limit, total } }` for paginated reads, and standardized error formats.
-- **Database Reads**: Use query indexing, pagination, and projections (`.select()` and `.lean()` in Mongoose) to avoid over-fetching.
-- **Security Check**: Enforce auth, CORS configurations, rate-limiting on sensitive routes (auth, OTP, uploads, checkouts), and strict role validation. Never commit secrets.
-
-### 3. SEO & Accessibility
-- **Metadata**: Each public page requires a unique title, meta description, and canonical URL.
-- **Semantic HTML**: Use proper semantic HTML, accessible form labels, keyboard navigation focus indicators, and focus traps for modals.
+### 2. Typing & Lint Hygiene
+- **TypeScript**: Ensure strict typing. Avoid using `any` type casts unless absolutely required by third-party library boundaries.
+- **Linter Warnings**: Resolve all ESLint warnings and errors. Never suppress errors with inline ignores unless there is a well-documented runtime blocker.
+- **Imports**: Organize import structures (group node modules, shared packages, internal relative paths, and style sheets logically).
 
 ---
 

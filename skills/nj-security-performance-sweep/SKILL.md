@@ -25,26 +25,22 @@ Use this skill to catch high-impact security and performance issues before shipp
 4. Check frontend bundle, images, rendering, and network behavior.
 5. Fix critical issues first; list lower-priority findings when not in scope.
 
-## Security Checklist
+## Security Audit Checklist
 
-- Auth/session expiry, refresh, logout, cookie flags, token storage.
-- Role, owner, tenant, and admin authorization.
-- Input validation and output sanitization.
-- Upload type/size/path controls.
-- Rate limits for auth, OTP, upload, checkout, and AI endpoints.
-- Webhook signature verification and idempotency.
-- Secret handling and safe logs.
-- CORS and production origin restrictions.
-- Payment amount trust boundaries.
+- **Credential Scans**: Audit all source files and environment config files to verify zero committed API keys, tokens, or plaintext passwords.
+- **Route Authorization Verification**: Trace all endpoints (especially admin and tenant routes) to check if they lack auth middleware or fail to validate resource ownership server-side.
+- **Input Validation Auditing**: Audit API controllers to verify schema boundaries are configured (e.g. confirming request payloads use strict Zod parsing).
+- **Endpoint Protection Sweeps**: Check for the presence of rate-limiting middleware on auth, OTP, and checkout endpoints. Verify webhooks check signature headers.
+- **Upload Policies Review**: Verify file upload handlers enforce limits on max size, mime-types, and ownership check boundaries.
+- **Dependency Audit**: Run package security audits (`npm audit` or equivalent) to locate vulnerability warnings in dependencies.
 
-## Performance Checklist
+## Performance Audit Checklist
 
-- Avoid N+1 database queries and unbounded collection scans.
-- Add pagination, indexes, projections, and caching for hot reads.
-- Compress and resize images; avoid huge hero/media assets.
-- Keep initial JS/CSS reasonable; avoid unnecessary client-side libraries.
-- Reduce re-render loops and expensive derived state.
-- Verify mobile viewport and scroll smoothness.
+- **Database Queries Profile**: Check code for unindexed database queries, unbounded reads (finds without limits), or N+1 query loops.
+- **Media Asset Diagnostics**: Check that all images use WebP/AVIF formats, set explicit aspect ratio size headers, and use lazy-loading below-the-fold.
+- **Bundle & Script Audits**: Check bundle maps to identify giant imported libraries or duplicate utility packages.
+- **Render Diagnostics**: Run profiling tool checks to locate excessive re-render loops or costly calculations occurring on every render.
+- **Mobile Responsive Audit**: Check layout rendering on mobile viewports for smooth scrolling and interactive touch target size margins.
 
 ## Reporting
 
