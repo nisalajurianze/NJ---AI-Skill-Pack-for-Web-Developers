@@ -223,26 +223,26 @@ Got a new standard or pattern you want to enforce? Contributions are welcome!
 **Q: My AI isn't recognizing the skills after installation?**  
 **A:** Make sure you completely restart the IDE or terminal running your AI assistant. For Cursor, ensure you have enabled rule indexing if prompted.
 
-**Q: Can I modify these skills for my own tech stack?**  
-**A:** Absolutely. The skills are written in standard Markdown with YAML frontmatter. Feel free to tweak the `Strict Guardrails` inside the `skills/` directory to match your team's specific coding guidelines (e.g. enforcing Tailwind instead of vanilla CSS).
+**Q: Does this work with Claude Code / VS Code Copilot / Cursor?**  
+**A:** Yes! The installer (`node install.js`) copies skills globally or locally into directories consumed by Cursor (`.cursor/rules`), Claude Code (`.claude/rules`), Gemini (`.gemini/`), and Codex (`.codex/`).
+
+**Q: Will these skills conflict with my existing custom instructions?**  
+**A:** No. The core orchestrator (`nj-global-orchestrator`) coordinates skills dynamically by triggering specific sub-guardians only when relevant, leaving your global configuration intact.
+
+**Q: How do I uninstall?**  
+**A:** Simply run `node install.js --uninstall` (or add `--local` if uninstallation is for a project directory) to cleanly remove the skill files without touching other configuration.
+
+**Q: How much does this cost? (Free?)**  
+**A:** This skill pack is 100% free and open-source under the MIT license.
+
+**Q: Can I use this for a team?**  
+**A:** Yes. We recommend committing the skills locally to your project's repository using `node install.js --local` so every developer on the team can share the same guidelines.
+
+**Q: What if I only want some skills, not all 36?**  
+**A:** You can selectively delete folders inside the `skills/` directory before running the installer, or manually delete specific folders from your global rules directories.
 
 **Q: Will this use up my AI credits faster?**  
-**A:** Actually, it might save you credits! Skills like `caveman` force the AI to write concise, terse outputs, avoiding token waste. `nj-fast-work-loop` prevents the AI from getting stuck in long, unverified planning loops.
-
-**Q: Is this pack safe to run on enterprise repositories?**  
-**A:** Yes. The skills actively enforce security. `nj-security-performance-sweep` and `nj-api-hardener` force the AI to follow strict OWASP compliance, secure storage practices, and code sanitization before it writes any final logic.
-
-**Q: Does this support Claude Code / OpenCode CLI tools?**  
-**A:** Yes. The installer automatically copies the skills to your home directory (`~/.claude/rules/`), making them accessible to Claude Code CLI and other compatible development tools.
-
-**Q: How do I update my installed skills when there's a new release?**  
-**A:** Simply pull the latest changes from this repository (`git pull`) and run the installer again (`node install.js`). The installer is smart enough to detect existing files, back them up, and overwrite them with the latest versions.
-
-**Q: Can I install these skills locally for only one project?**  
-**A:** Yes! Run `node install.js --local` in your project's root directory. This will initialize local `.gemini`, `.cursor`, `.codex` or `.claude` folders containing the skill pack just for that workspace.
-
-**Q: Will these custom instructions conflict with my existing prompt rules?**  
-**A:** No. The orchestrator skill (`nj-global-orchestrator`) acts as an orchestration layer, invoking other skills dynamically based on trigger keywords, meaning your general rules will continue working normally.
+**A:** Actually, it saves credits. Rules like `caveman` force the AI to write concise, technical responses, saving input/output tokens. `nj-fast-work-loop` prevents the AI from getting stuck in loops.
 
 ---
 
