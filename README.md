@@ -8,7 +8,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/github/v/release/nisalajurianze/NJ---AI-Skill-Pack-for-Web-Developers?label=version&style=flat-square" alt="Version 1.0.0">
-  <a href="#-1-click-installation"><img src="https://img.shields.io/badge/install-1--click-brightgreen?style=flat-square" alt="1-Click Install"></a>
+  <a href="#-quick-installation"><img src="https://img.shields.io/badge/install-Quick-brightgreen?style=flat-square" alt="Quick Install"></a>
   <img src="https://img.shields.io/badge/skills-36_Premium-blue?style=flat-square" alt="36 Skills">
   <img src="https://img.shields.io/badge/platform-Codex%20%7C%20Gemini%20%7C%20Cursor%20%7C%20Claude-orange?style=flat-square" alt="Supported Platforms">
   <a href="https://github.com/nisalajurianze/NJ---AI-Skill-Pack-for-Web-Developers/stargazers"><img src="https://img.shields.io/github/stars/nisalajurianze/NJ---AI-Skill-Pack-for-Web-Developers?style=flat-square" alt="Stars"></a>
@@ -25,13 +25,13 @@
 1. [Overview](#-overview)
 2. [Why Install This Pack?](#-the-why-advantages-of-installing-this-pack)
 3. [Prerequisites](#-prerequisites)
-4. [1-Click Installation](#-1-click-installation)
+4. [Quick Installation](#-quick-installation)
 5. [How to Use](#-how-to-use)
 6. [Complete Skill Glossary](#-complete-skill-glossary-all-36-skills)
 7. [Contributing](#-contributing)
 8. [FAQ](#-faq)
-9. [Author](#️-author)
-10. [License](#️-license)
+9. [Author](#-author)
+10. [License](#-license)
 
 ---
 
@@ -65,7 +65,7 @@ Before installing, ensure you have one of the following AI Assistants or IDEs co
 
 ---
 
-## ⚡ 1-Click Installation
+## ⚡ Quick Installation
 
 You can install all 36 skills globally to your IDE/AI assistant in seconds.
 
