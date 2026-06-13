@@ -14,6 +14,7 @@
   <a href="https://github.com/nisalajurianze/NJ---AI-Skill-Pack-for-Web-Developers/stargazers"><img src="https://img.shields.io/github/stars/nisalajurianze/NJ---AI-Skill-Pack-for-Web-Developers?style=flat-square" alt="Stars"></a>
   <a href="https://github.com/nisalajurianze/NJ---AI-Skill-Pack-for-Web-Developers/network/members"><img src="https://img.shields.io/github/forks/nisalajurianze/NJ---AI-Skill-Pack-for-Web-Developers?style=flat-square" alt="Forks"></a>
   <a href="https://github.com/nisalajurianze/NJ---AI-Skill-Pack-for-Web-Developers/issues"><img src="https://img.shields.io/github/issues/nisalajurianze/NJ---AI-Skill-Pack-for-Web-Developers?style=flat-square" alt="Issues"></a>
+  <img src="https://img.shields.io/github/last-commit/nisalajurianze/NJ---AI-Skill-Pack-for-Web-Developers?style=flat-square" alt="Last Commit">
   <img src="https://img.shields.io/badge/audit-100%25_Pass-success?style=flat-square" alt="Audit Verified">
   <img src="https://img.shields.io/badge/license-MIT-purple?style=flat-square" alt="License">
 </p>
