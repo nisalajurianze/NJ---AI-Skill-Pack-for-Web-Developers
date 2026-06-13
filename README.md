@@ -22,7 +22,9 @@
 5. [How to Use](#-how-to-use)
 6. [Complete Skill Glossary](#-complete-skill-glossary-all-36-skills)
 7. [Contributing](#-contributing)
-8. [License](#️-license)
+8. [FAQ](#-faq)
+9. [Author](#️-author)
+10. [License](#️-license)
 
 ---
 
@@ -154,6 +156,23 @@ Got a new standard or pattern you want to enforce? Contributions are welcome!
 2. Create your skill in the `skills/` directory following the 3-part architecture (`Trigger Signals`, `Operational Instructions`, `Strict Guardrails`).
 3. Run `.\audit-skills.ps1` (or `./audit-skills.sh` if available) to ensure your skill passes the quality checks.
 4. Open a Pull Request!
+
+---
+
+## ❓ FAQ
+
+**Q: My AI isn't recognizing the skills after installation?**  
+**A:** Make sure you completely restart the IDE or terminal running your AI assistant so it can pick up the new files in the `.gemini`/`.codex` directories.
+
+**Q: Can I modify these skills for my own tech stack?**  
+**A:** Absolutely. The skills are written in standard Markdown YAML. Feel free to tweak the `Strict Guardrails` inside the `skills/` directory to match your team's specific coding guidelines (e.g. enforcing Tailwind instead of vanilla CSS).
+
+---
+
+## 👨‍💻 Author
+
+Created and maintained by **Nisala Jurianze (NJ)**.  
+If you found this pack helpful in your workflow, please consider giving the repository a ⭐️ on GitHub!
 
 ---
 
