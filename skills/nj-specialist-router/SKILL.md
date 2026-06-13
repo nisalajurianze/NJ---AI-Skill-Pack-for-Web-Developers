@@ -5,6 +5,9 @@ description: Specialist-skill routing layer for Nisal's work. Use when the user 
 
 # NJ Specialist Router
 
+## Purpose
+Specialist-skill routing layer for Nisal's work. Use when the user asks for "special agents", "eka eka dewal walata agentla", "best skill use karanna", "auto skill use karanna", "skills automatically use karanna", "hama dema balala", "auto planning", "plugin use karanna", "AI support ganna", "superb widiyata", broad repo work, or any task that needs choosing multiple skills across planning, code quality, API, frontend, deployment, security, performance, GitHub, Vercel, Cloudflare, Figma, OpenAI, documents, or spreadsheets.
+
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
 1. The user asks to "use the best skills", "use special agents", or "hama dema balala karanna".
@@ -30,6 +33,22 @@ Use this skill to choose the smallest useful set of specialist skills and tools 
 - **Frontend/UI polish**: `$nisal-frontend-polish`, `$verification`, `$agent-browser-verify`, `$shadcn`.
 - **Tests/build failures**: `$nisal-test-failure-fixer`, `$gh-fix-ci`, `$verification`, `$nisal-feature-review-gatekeeper`.
 - **Product/design**: `$figma-use`, `$figma-generate-design`, `$nisal-motionsites-design-guardian`, `$nisal-webgl-3d-design-guardian`, `$nisal-design-engineer-guardian`, `$nisal-image-prompt-analyst`.
+
+
+## Code Examples
+
+### Match Mapping Function
+```javascript
+const SPECIALISTS = [
+  { name: 'nj-api-hardener', match: /api|endpoint|route|express|controller|zod/i },
+  { name: 'nj-frontend-polish', match: /css|tailwind|style|responsive|ui|animation/i },
+  { name: 'nj-database-schema-guardian', match: /schema|table|prisma|drizzle|migration/i }
+];
+
+function routeSkill(prompt) {
+  return SPECIALISTS.filter(s => s.match.test(prompt)).map(s => s.name);
+}
+```
 
 ## Strict Guardrails
 - **NEVER** call every possible skill. Choose only the ones that change the outcome.

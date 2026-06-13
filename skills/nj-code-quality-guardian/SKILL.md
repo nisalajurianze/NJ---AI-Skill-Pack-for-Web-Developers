@@ -3,7 +3,7 @@ name: nj-code-quality-guardian
 description: Code quality improvement workflow for Nisal's repositories. Use when the user asks to improve code quality, "code quality eka wadi karanna", clean architecture, refactor, remove bugs, make code superb, professionalize a repo, reduce technical debt, improve maintainability, or review/repair frontend, backend, shared packages, tests, and configs.
 ---
 
-# Nisal Code Quality Guardian
+# NJ Code Quality Guardian
 
 ## Purpose
 

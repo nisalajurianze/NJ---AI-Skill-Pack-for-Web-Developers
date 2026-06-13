@@ -3,7 +3,7 @@ name: nj-fast-work-loop
 description: Speed and cost-control workflow for Nisal's coding tasks. Use when the user says "wade ikman karanna", "quickly", "fast", "credit aduwen", "time waste nokara", wants rapid implementation, or asks Codex to inspect, edit, test, and finish work efficiently without unnecessary browsing or over-planning.
 ---
 
-# Nisal Fast Work Loop
+# NJ Fast Work Loop
 
 ## Purpose
 

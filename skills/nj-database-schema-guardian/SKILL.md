@@ -5,6 +5,9 @@ description: Guidelines for designing robust, scalable database schemas (Prisma,
 
 # NJ Database Schema Guardian
 
+## Purpose
+Guidelines for designing robust, scalable database schemas (Prisma, Mongoose, Drizzle). Focuses on soft deletes, UUID/CUID indexing, relational integrity, timestamps, and scalable connection pooling patterns. Use when designing or migrating database models.
+
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
 1. The user asks to "create a database schema", "design the database", or "add a new table/collection".

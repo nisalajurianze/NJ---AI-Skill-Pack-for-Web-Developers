@@ -3,7 +3,7 @@ name: nj-design-engineer-guardian
 description: Guidelines for premium shadcn-style modular React components, utility merging, Radix UI primitive patterns, and AI prompt-friendly component registry practices. Use when building reusable React UI kits, component libraries, or SaaS design systems.
 ---
 
-# Nisal Design Engineer Guardian
+# NJ Design Engineer Guardian
 
 ## Purpose
 This skill establishes guidelines and complete code recipes to engineer premium, copy-pasteable React UI components using Tailwind CSS, Radix UI primitives, and shadcn styling rules, optimized for modern developer workflows and AI code generation.

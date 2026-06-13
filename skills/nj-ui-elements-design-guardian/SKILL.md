@@ -3,7 +3,7 @@ name: nj-ui-elements-design-guardian
 description: Design specifications for UI components (bottom sheets, dialogs/modals, toasts/banners, progress bars, carousels, tabs, and buttons). Includes styling specs for glassmorphism, animations, and shadows. Use when designing standalone UI components.
 ---
 
-# Nisal UI Elements Design Guardian
+# NJ UI Elements Design Guardian
 
 ## Purpose
 This skill establishes premium visual design guidelines and specs for standalone UI components. It ensures visual consistency, modern aesthetics (glassmorphism, vibrant gradients), and micro-animations across all project codebases.

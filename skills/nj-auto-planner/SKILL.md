@@ -3,7 +3,7 @@ name: nj-auto-planner
 description: Automatic planning and plan-maintenance workflow for Nisal's tasks. Use when the user asks for auto planning, "auto planning", "plan eka hadanna", "wade organize karanna", "roadmap", "goal", "hama dema step by step", "digatama karanna", or when a coding/product task has multiple meaningful steps and needs a concise live plan that updates as work progresses.
 ---
 
-# Nisal Auto Planner
+# NJ Auto Planner
 
 ## Purpose
 
@@ -80,6 +80,25 @@ Before finalizing:
 
 Use short progress updates during long work. Mention what was completed, what is in progress, and what verification is next.
 
+
+
+## Code Examples
+
+### Standard Live Plan (`task.md`) Format
+```markdown
+# Goal: Migrate to Drizzle ORM and Implement Auth
+
+- [x] Phase 1: Database Setup
+  - [x] Scaffold Drizzle configuration and client
+  - [x] Declare User and Session schemas
+- [/] Phase 2: Authentication Routes
+  - [x] Implement signup route with Zod schema validation
+  - [/] Implement login endpoint with JWT generation
+  - [ ] Add session validation middleware
+- [ ] Phase 3: Frontend Forms & Integration
+  - [ ] Create login/signup forms using shadcn components
+  - [ ] Integrate React Query for authentication state
+```
 
 ## Strict Guardrails
 - **NEVER** keep stale planned work that no longer matches the reality of the codebase.

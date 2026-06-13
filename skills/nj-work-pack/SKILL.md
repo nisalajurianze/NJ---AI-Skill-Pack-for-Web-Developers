@@ -3,7 +3,10 @@ name: nj-work-pack
 description: Coordinated execution pack for Nisal's coding, product, design, deployment, security, API, code-quality, auto-planning, auto-skill-selection, plugin, specialist-agent, and AI-development work. Use when the user asks to inspect all repos, use previous work, create or use special agents/skills, automatically use the right skills, auto-plan work, improve code quality, work faster, reduce credit usage, improve performance, use plugins/connectors, get external AI support such as Opus 4.8, increase thinking quality or creativity, use GitHub/Vercel/Cloudflare/Figma/OpenAI capabilities, use Claude Code/opencode-style CLIs, or run a large roadmap to completion.
 ---
 
-# Nisal Work Pack
+# NJ Work Pack
+
+## Purpose
+Coordinated execution pack for Nisal's coding, product, design, deployment, security, API, code-quality, auto-planning, auto-skill-selection, plugin, specialist-agent, and AI-development work. Use when the user asks to inspect all repos, use previous work, create or use special agents/skills, automatically use the right skills, auto-plan work, improve code quality, work faster, reduce credit usage, improve performance, use plugins/connectors, get external AI support such as Opus 4.8, increase thinking quality or creativity, use GitHub/Vercel/Cloudflare/Figma/OpenAI capabilities, use Claude Code/opencode-style CLIs, or run a large roadmap to completion.
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
@@ -119,6 +122,18 @@ Do not mark a setup as complete until:
 - Account-gated tools are either authenticated or listed as explicit login blockers.
 - The final report says what was installed, what was verified, and what still requires user login or connector confirmation.
 
+
+
+## Code Examples
+
+### CLI Command Chain Coordinator
+```markdown
+# Executing Multi-Domain Tasks
+1. Run `nj-global-orchestrator` to set plan boundaries.
+2. Invoke `nj-design-engineer-guardian` to build front-end components.
+3. Validate backend endpoints using `nj-api-hardener`.
+4. Trigger `nj-test-failure-fixer` to resolve typecheck or build bugs.
+```
 
 ## Strict Guardrails
 - **NEVER** use generic platforms (like ChatGPT or Web Search) for facts that are already defined in local custom `nisal-*` skills.

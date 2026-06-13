@@ -11,6 +11,9 @@
   <a href="#-1-click-installation"><img src="https://img.shields.io/badge/install-1--click-brightgreen?style=flat-square" alt="1-Click Install"></a>
   <img src="https://img.shields.io/badge/skills-36_Premium-blue?style=flat-square" alt="36 Skills">
   <img src="https://img.shields.io/badge/platform-Codex%20%7C%20Gemini%20%7C%20Cursor%20%7C%20Claude-orange?style=flat-square" alt="Supported Platforms">
+  <a href="https://github.com/nisalajurianze/NJ---AI-Skill-Pack-for-Web-Developers/stargazers"><img src="https://img.shields.io/github/stars/nisalajurianze/NJ---AI-Skill-Pack-for-Web-Developers?style=flat-square" alt="Stars"></a>
+  <a href="https://github.com/nisalajurianze/NJ---AI-Skill-Pack-for-Web-Developers/network/members"><img src="https://img.shields.io/github/forks/nisalajurianze/NJ---AI-Skill-Pack-for-Web-Developers?style=flat-square" alt="Forks"></a>
+  <a href="https://github.com/nisalajurianze/NJ---AI-Skill-Pack-for-Web-Developers/issues"><img src="https://img.shields.io/github/issues/nisalajurianze/NJ---AI-Skill-Pack-for-Web-Developers?style=flat-square" alt="Issues"></a>
   <img src="https://img.shields.io/badge/audit-100%25_Pass-success?style=flat-square" alt="Audit Verified">
   <img src="https://img.shields.io/badge/license-MIT-purple?style=flat-square" alt="License">
 </p>
@@ -227,6 +230,18 @@ Got a new standard or pattern you want to enforce? Contributions are welcome!
 
 **Q: Is this pack safe to run on enterprise repositories?**  
 **A:** Yes. The skills actively enforce security. `nj-security-performance-sweep` and `nj-api-hardener` force the AI to follow strict OWASP compliance, secure storage practices, and code sanitization before it writes any final logic.
+
+**Q: Does this support Claude Code / OpenCode CLI tools?**  
+**A:** Yes. The installer automatically copies the skills to your home directory (`~/.claude/rules/`), making them accessible to Claude Code CLI and other compatible development tools.
+
+**Q: How do I update my installed skills when there's a new release?**  
+**A:** Simply pull the latest changes from this repository (`git pull`) and run the installer again (`node install.js`). The installer is smart enough to detect existing files, back them up, and overwrite them with the latest versions.
+
+**Q: Can I install these skills locally for only one project?**  
+**A:** Yes! Run `node install.js --local` in your project's root directory. This will initialize local `.gemini`, `.cursor`, `.codex` or `.claude` folders containing the skill pack just for that workspace.
+
+**Q: Will these custom instructions conflict with my existing prompt rules?**  
+**A:** No. The orchestrator skill (`nj-global-orchestrator`) acts as an orchestration layer, invoking other skills dynamically based on trigger keywords, meaning your general rules will continue working normally.
 
 ---
 

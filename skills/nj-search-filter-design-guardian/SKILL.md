@@ -3,7 +3,7 @@ name: nj-search-filter-design-guardian
 description: Guidelines for search bars, auto-suggestions, category filters, bottom sheet mobile filters, web sidebar filters, and sort controls. Use when designing search inputs, filter overlays, or listings pages.
 ---
 
-# Nisal Search & Filter Design Guardian
+# NJ Search & Filter Design Guardian
 
 ## Purpose
 This skill establishes conventions for designing user-friendly search interfaces and filter/sort controls across mobile and web platforms to help users locate content quickly and easily.
@@ -41,6 +41,38 @@ This skill establishes conventions for designing user-friendly search interfaces
 - Place the sort selector near the results count (e.g., `"124 results found — Sort by: Popularity"`).
 - Keep sorting options concise (usually 3 to 5 options, e.g., Price: Low to High, Price: High to Low, Newest, Most Popular).
 
+
+
+## Code Examples
+
+### Debounced React Search Component
+```tsx
+import React, { useState, useEffect } from 'react';
+
+export function DebouncedSearch({ onSearch }: { onSearch: (val: string) => void }) {
+  const [query, setQuery] = useState('');
+
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      onSearch(query);
+    }, 300);
+
+    return () => clearTimeout(handler);
+  }, [query, onSearch]);
+
+  return (
+    <div className="search-input-wrapper">
+      <input
+        type="search"
+        placeholder="Search resources..."
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        aria-label="Search resources"
+      />
+    </div>
+  );
+}
+```
 
 ## Strict Guardrails
 - **NEVER** build a search bar without a clear (`"x"`) button.

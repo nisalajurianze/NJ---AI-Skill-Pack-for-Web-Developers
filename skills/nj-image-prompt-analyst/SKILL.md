@@ -5,6 +5,9 @@ description: Image prompt analyst and clarifier. Automatically triggers when a u
 
 # NJ Image Prompt Analyst
 
+## Purpose
+Image prompt analyst and clarifier. Automatically triggers when a user uploads/inputs an image with no instructions, analyzing it deeply and interviewing the user to clarify requirements.
+
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
 1. The user uploads an image without any explicit text instructions.
@@ -26,6 +29,19 @@ Instead of guessing or starting to build blindly, present the analysis to the us
 - **Design Alignment**: "Should we replicate the exact styling shown here, or adapt it to your active design system?"
 - **Backend & Logic Gaps**: "Should the interactive elements connect to a database or external API? What mock data do you need?"
 - **Responsive Behavior**: "How should this layout adapt on mobile screen sizes?"
+
+
+## Code Examples
+
+### Reverse-Engineering Prompt Template
+```markdown
+# Screenshot Reverse-Engineering Checklist
+1. Styling Tokens: Identify primary, secondary, background, and text colors.
+2. Typography: Note heading sizes, font weight, line spacing.
+3. Layout & Structure: Flexbox grid structure, column/row wrappers, padding scale.
+4. UI States: Highlight active tab lines, hover state glow filters.
+5. Assets Needed: Isolate illustrations or generate placeholders with generate_image.
+```
 
 ## Strict Guardrails
 - **NEVER** execute a code change or build a page based *only* on an uninstructed image.

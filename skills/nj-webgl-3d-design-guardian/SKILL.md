@@ -3,7 +3,7 @@ name: nj-webgl-3d-design-guardian
 description: Guidelines for 3D model integration and WebGL animations in websites using React Three Fiber (R3F), Three.js, and Spline. Includes loading controls, shader configurations, mouse-interactive parallax, and performance optimizations. Use when designing landing pages, product pages, or portfolios featuring interactive 3D assets.
 ---
 
-# Nisal WebGL 3D Design Guardian
+# NJ WebGL 3D Design Guardian
 
 ## Purpose
 This skill establishes guidelines and complete code recipes to integrate and animate interactive 3D models (glTF/GLB) on web pages, ensuring optimal loading speeds, premium rendering quality, and interactive WebGL elements.

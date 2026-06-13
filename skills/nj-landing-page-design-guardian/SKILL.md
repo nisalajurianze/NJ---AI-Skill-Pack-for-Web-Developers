@@ -3,7 +3,7 @@ name: nj-landing-page-design-guardian
 description: Guidelines for high-converting marketing pages (Hero, Features, Pricing sections) in Minimal, Brutalist, and Editorial styles, with explicit rules for superb modern 3D transforms, CSS animations, and wow-factor micro-interactions. Use when designing landing pages, portfolios, or marketing sections.
 ---
 
-# Nisal Landing Page Design Guardian
+# NJ Landing Page Design Guardian
 
 ## Purpose
 This skill establishes guidelines for designing high-converting, modern marketing pages with "wow-factor" visual elements, including CSS 3D transforms, GPU-accelerated animations, and interactive micro-animations.

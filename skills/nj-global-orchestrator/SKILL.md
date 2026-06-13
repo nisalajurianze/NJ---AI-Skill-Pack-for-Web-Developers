@@ -5,6 +5,9 @@ description: Global orchestrator skill. Automatically routes and manages all cod
 
 # NJ Global Orchestrator
 
+## Purpose
+Global orchestrator skill. Automatically routes and manages all coding, planning, security, frontend, deploy, and API tasks by selecting, loading, and running the correct set of skills. Use this for general execution where the AI needs to automatically coordinate multi-domain skills.
+
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
 1. The user provides a multi-domain or complex task (e.g., "build a full stack app").
@@ -34,6 +37,20 @@ Select the primary skill and companion skills from the installed set:
 
 ### 3. Load & Execute
 For each selected skill, read and follow the instructions defined in `<your-skills-dir>/<skill-name>/SKILL.md`. Implement a concise plan, run the necessary commands, verify the output, and ensure the task is completely finished.
+
+
+## Code Examples
+
+### Master Global Instruction Routing Rule
+```markdown
+## Global Instruction Wireframe
+For every incoming request:
+1. Invoke the `nj-repo-memory` skill to load active workspace profiles and details.
+2. Initialize planning using `nj-auto-planner` to create `task.md`.
+3. Check trigger conditions to delegate specific subtasks to respective guardian skills:
+   - For UI design/front-end tasks: route to `nj-frontend-polish`.
+   - For DB schema/api/backend tasks: route to `nj-api-hardener`.
+```
 
 ## Strict Guardrails
 - **NEVER** ignore the skills matrix. Always route to the specific guardian for the domain being worked on.

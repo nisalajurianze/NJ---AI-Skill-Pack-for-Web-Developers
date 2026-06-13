@@ -5,6 +5,9 @@ description: Guidelines for implementing flawless SEO metadata, JSON-LD structur
 
 # NJ Seo A11y Guardian
 
+## Purpose
+Guidelines for implementing flawless SEO metadata, JSON-LD structured data, Open Graph tags, and strict WCAG accessibility (a11y) standards (ARIA, keyboard navigation). Use when finalizing page layouts or structuring Next.js/React applications for search engines and screen readers.
+
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
 1. The user asks to "improve SEO", "add meta tags", "optimize for Google", or "add Rich Snippets".

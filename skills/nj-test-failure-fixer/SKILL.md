@@ -3,7 +3,7 @@ name: nj-test-failure-fixer
 description: Focused debugging workflow for failing tests, builds, linters, CI, typechecks, Playwright/Vitest/Jest errors, API smoke failures, Vercel build failures, Railway/Docker issues, and "test fail wenawa fix karanna" requests in Nisal's projects.
 ---
 
-# Nisal Test Failure Fixer
+# NJ Test Failure Fixer
 
 ## Purpose
 

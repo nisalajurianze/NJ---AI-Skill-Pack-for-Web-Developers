@@ -3,7 +3,7 @@ name: nj-git-guardian
 description: Git branching, commit styling (Conventional Commits), and automatic PR summary/template generation standards for Nisal's repositories. Use when staging changes, making git commits, creating branches, or writing PR descriptions.
 ---
 
-# Nisal Git Guardian
+# NJ Git Guardian
 
 ## Purpose
 This skill establishes Git workflows, structured commit styles, and standards for creating clear Pull Requests to maintain repository history and facilitate easy code reviews.

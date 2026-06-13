@@ -3,7 +3,7 @@ name: nj-checkout-payment-design-guardian
 description: Guidelines for cart flows, checkout, wallets, cashback, and subscription paywalls. Focuses on trust cues, payment methods (PayHere, card), and conversion optimization. Use when building ecommerce checkouts or paywall pages.
 ---
 
-# Nisal Checkout & Payment Design Guardian
+# NJ Checkout & Payment Design Guardian
 
 ## Purpose
 This skill establishes guidelines for designing high-converting, trust-oriented checkouts, carts, payment gateways, and subscription paywall pages to minimize cart abandonment and drive paid conversions.
@@ -44,6 +44,41 @@ This skill establishes guidelines for designing high-converting, trust-oriented 
 - Use clean checkmark and dash icons rather than cluttered text to represent active features.
 - State standard legal terms clearly (e.g., `"Cancel anytime"`, `"14-day money-back guarantee"`).
 
+
+
+## Code Examples
+
+### Secure Stripe Subscription Session Setup
+```typescript
+import Stripe from 'stripe';
+
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, { apiVersion: '2023-10-16' });
+
+export async function createCheckoutSession(userId: string, items: { id: string; quantity: number }[]) {
+  // 1. Fetch official pricing from database, do NOT trust client-provided prices
+  const lineItems = await Promise.all(items.map(async (item) => {
+    const product = await db.product.findUnique({ where: { id: item.id } });
+    if (!product) throw new Error(`Product not found: ${item.id}`);
+    return {
+      price_data: {
+        currency: 'usd',
+        product_data: { name: product.name },
+        unit_amount: product.priceInCents, // Hardened: database price
+      },
+      quantity: item.quantity,
+    };
+  }));
+
+  return await stripe.checkout.sessions.create({
+    payment_method_types: ['card'],
+    line_items: lineItems,
+    mode: 'subscription',
+    success_url: `${process.env.NEXT_PUBLIC_APP_URL}/checkout/success?session_id={CHECKOUT_SESSION_ID}`,
+    cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}/checkout/cancel`,
+    metadata: { userId },
+  });
+}
+```
 
 ## Strict Guardrails
 - **NEVER** hide the final cost summary on the checkout page. It must be sticky and visible at all times during scroll.

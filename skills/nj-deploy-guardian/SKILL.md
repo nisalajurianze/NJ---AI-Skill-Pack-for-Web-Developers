@@ -3,7 +3,7 @@ name: nj-deploy-guardian
 description: Deployment and release-safety workflow for Nisal's Vercel, Railway, Render, Cloudflare Workers, Docker, GitHub Actions, env vars, domains, production/preview deployments, and "deploy karanna", "production ready", "release fix", or CI/CD tasks.
 ---
 
-# Nisal Deploy Guardian
+# NJ Deploy Guardian
 
 ## Purpose
 

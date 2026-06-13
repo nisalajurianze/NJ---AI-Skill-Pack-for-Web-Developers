@@ -3,7 +3,7 @@ name: nj-account-profile-design-guardian
 description: Guidelines for user profile pages, account settings (grouped navigation, switches), notifications panels, and security danger zones. Use when designing user profiles, account management dashboards, or settings panels.
 ---
 
-# Nisal Account & Profile Design Guardian
+# NJ Account & Profile Design Guardian
 
 ## Purpose
 This skill establishes premium UX design conventions for account settings dashboards, user profiles, notifications management, and high-risk security account states.
@@ -42,6 +42,53 @@ This skill establishes premium UX design conventions for account settings dashbo
   - Border/Text color: Crimson red (`#ef4444` / `#dc2626`).
   - Action trigger: Require confirmation (e.g., typing `"DELETE"` or entering a password in a modal dialog).
 
+
+
+## Code Examples
+
+### Grouped Settings Form with Danger Zone
+```tsx
+import React, { useState } from 'react';
+
+export function AccountSettings() {
+  const [emailAlerts, setEmailAlerts] = useState(true);
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
+  const [deleteConfirm, setDeleteConfirm] = useState('');
+
+  return (
+    <div className="settings-container">
+      <section className="settings-section">
+        <h3>Notification Preferences</h3>
+        <div className="setting-row">
+          <div>
+            <label htmlFor="email-alerts">Email Alerts</label>
+            <p className="helper-text">Receive updates about security and activity.</p>
+          </div>
+          <button 
+            id="email-alerts" 
+            role="switch" 
+            aria-checked={emailAlerts}
+            className={`toggle-switch ${emailAlerts ? 'active' : ''}`}
+            onClick={() => setEmailAlerts(!emailAlerts)}
+          />
+        </div>
+      </section>
+
+      <section className="settings-section danger-zone">
+        <h3>Danger Zone</h3>
+        <p>Destructive actions that cannot be undone.</p>
+        <button 
+          id="delete-account-btn"
+          className="btn-danger" 
+          onClick={() => setShowDeleteModal(true)}
+        >
+          Delete Account
+        </button>
+      </section>
+    </div>
+  );
+}
+```
 
 ## Strict Guardrails
 - **NEVER** use checkboxes for binary settings that take immediate effect (use toggle switches).

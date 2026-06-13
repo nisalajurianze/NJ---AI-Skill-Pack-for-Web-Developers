@@ -5,6 +5,9 @@ description: Autonomous execution workflow for large prompts, roadmaps, multi-st
 
 # Run To Completion
 
+## Purpose
+Autonomous execution workflow for large prompts, roadmaps, multi-step tasks, and "keep going until done" requests. Use when the user asks Codex to finish a big task end to end, says not to stop until it is 100% complete, gives broad approval for necessary actions, or uses similar Romanized Sinhala phrasing such as "100% iwara wenakam", "nathara karanne nathuwa", "road map ekak", "loku prompt ekak", or "approval eka tiyenawa".
+
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
 1. The user provides a multi-step task or a roadmap and says "run to completion".
@@ -21,6 +24,23 @@ When triggered, assume full autonomy over the execution phase:
 ### Verification Standards
 - A step is only considered complete if it passes local builds and tests.
 - Always check the browser logs or API response payloads.
+
+
+## Code Examples
+
+### Continuous Audit and Fix Script
+```bash
+#!/bin/bash
+# Continuous build validator
+echo "Running validation loop..."
+npm run lint -- --fix
+npm run typecheck
+if [ $? -ne 0 ]; then
+  echo "TypeScript compiler error. Scanning for missing exports..."
+  # Executing recovery actions...
+  npm run build
+fi
+```
 
 ## Strict Guardrails
 - **NEVER** pause for routine user review during the execution phase.

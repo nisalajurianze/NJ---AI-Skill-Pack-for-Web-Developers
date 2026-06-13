@@ -3,7 +3,7 @@ name: nj-security-performance-sweep
 description: Combined security and performance review workflow for Nisal's full-stack apps. Use when the user asks for security, performance, speed, optimization, production hardening, "podi podi than pawa hodata balanna", audits, API/web risks, Lighthouse, database hot paths, bundle size, auth, payments, uploads, or compliance-sensitive checks.
 ---
 
-# Nisal Security Performance Sweep
+# NJ Security Performance Sweep
 
 ## Purpose
 

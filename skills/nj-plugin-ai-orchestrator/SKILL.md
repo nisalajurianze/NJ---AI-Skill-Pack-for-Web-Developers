@@ -3,7 +3,7 @@ name: nj-plugin-ai-orchestrator
 description: Plugin, connector, tool, and external-AI orchestration for Nisal's work. Use when the user asks to use plugins, "plugin use karanna", "AI support ganna", "Opus 4.8", Claude Code, OpenCode, other AI models, special agents, app connectors, GitHub/Vercel/Cloudflare/Figma/Cloudinary/Browser/OpenAI tools, or when a task would benefit from authenticated external tools or a second model pass.
 ---
 
-# Nisal Plugin AI Orchestrator
+# NJ Plugin AI Orchestrator
 
 ## Purpose
 

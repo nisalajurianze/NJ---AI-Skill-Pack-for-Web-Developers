@@ -3,7 +3,7 @@ name: nj-auto-skill-runner
 description: Automatic Codex skill selection and skill-use workflow for Nisal's tasks. Use when the user says "auto skill use karanna", "skills automatically use karanna", "wenam skill ekak one", "best skills tika use karanna", "hama skill ekama balala right ewa use karanna", or gives a broad coding/product/API/frontend/deploy/security task where Codex should proactively choose, load, and coordinate the right skills without waiting for the user to name them.
 ---
 
-# Nisal Auto Skill Runner
+# NJ Auto Skill Runner
 
 ## Purpose
 
@@ -64,6 +64,25 @@ Use this baseline when the user gives a broad task and does not name exact skill
 - Prefer local repo inspection before web browsing or external AI.
 - Keep the final answer focused on what was done, which checks passed, and any real blockers.
 
+
+
+## Code Examples
+
+### Core Skill Routing Schema
+```javascript
+const SKILL_ROUTING_MANIFEST = {
+  triggers: {
+    frontend: ['ui', 'layout', 'tailwind', 'component', 'responsive', 'animation'],
+    backend: ['api', 'route', 'database', 'prisma', 'express', 'controller', 'zod'],
+    security: ['auth', 'jwt', 'validation', 'sanitize', 'cors', 'rate-limit']
+  },
+  mapping: {
+    frontend: ['nj-frontend-polish', 'nj-design-engineer-guardian'],
+    backend: ['nj-api-hardener', 'nj-database-schema-guardian'],
+    security: ['nj-security-performance-sweep']
+  }
+};
+```
 
 ## Strict Guardrails
 - **NEVER** ask the user which skill to use when local context makes the choice clear.

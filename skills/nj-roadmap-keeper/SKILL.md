@@ -3,7 +3,7 @@ name: nj-roadmap-keeper
 description: Roadmap, checklist, goal, and small-detail tracking workflow for Nisal's long coding/product tasks. Use when the user gives many requirements, says "hama dema", "podi podi than pawa", "roadmap", "complete list", "100% iwara wenakam", or wants Codex to keep working without losing small tasks.
 ---
 
-# Nisal Roadmap Keeper
+# NJ Roadmap Keeper
 
 ## Purpose
 
@@ -54,6 +54,20 @@ Keep the final answer short but complete:
 - Best next step only when useful.
 
 
+
+
+## Code Examples
+
+### Roadmap Checklist Example
+```markdown
+# Roadmap: Admin Dashboard Integration
+
+- [x] Initial Scaffolding & Turborepo configuration
+- [x] Prisma model definitions and index setup
+- [/] API controller validation logic and route setup
+- [ ] Front-end view layout implementation
+- [ ] Browser verification and Lighthouse validation
+```
 
 ## Strict Guardrails
 - **NEVER** call a roadmap complete just because all files were edited. You must verify them.

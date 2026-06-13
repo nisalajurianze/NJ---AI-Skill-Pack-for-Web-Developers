@@ -3,7 +3,7 @@ name: nj-repo-memory
 description: Project memory and repo routing template. Use when the current work relates to known repositories or previous contexts, or when the user asks to use previous small details from known projects.
 ---
 
-# Project Repo Memory
+# NJ Repo Memory
 
 ## Purpose
 To maintain context and provide specific instructions for known repositories within the user's workspace, acting as a shortcut before broad exploration.
@@ -39,6 +39,19 @@ Use this skill to apply known project context before broad exploration. It is a 
 ## Important Habit
 
 When a previous audit mentions a bug or roadmap item, verify the current code state before assuming it is still present.
+
+
+## Code Examples
+
+### Project Memory Blueprint (`nj-repo-memory.md`)
+```markdown
+# Active Project Workspace Settings
+- **Framework & Core**: Next.js App Router, React 19, TailwindCSS
+- **Database**: Prisma client, PostgreSQL hosting on Neon DB
+- **Hosting / Deploy**: Vercel production server, main branch auto-deploy
+- **Auth Pattern**: NextAuth JWT flow, Session cookies secure=true
+- **Key Modules**: Billing (/billing), User Portal (/portal), API (/api)
+```
 
 ## Strict Guardrails
 - **NEVER** assume a past architecture diagram or memory is 100% accurate without checking the live code.

@@ -5,6 +5,9 @@ description: Guidelines for managing frontend global state, data fetching, cachi
 
 # NJ State Data Guardian
 
+## Purpose
+Guidelines for managing frontend global state, data fetching, caching, and optimistic UI updates using React Query (TanStack Query) and Zustand. Prevents prop-drilling and ensures robust error/loading handling. Use when integrating APIs or managing complex UI states.
+
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
 1. The user asks to "fetch data from the backend", "integrate the API", or "show a loading state".

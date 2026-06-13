@@ -3,7 +3,7 @@ name: nj-onboarding-design-guardian
 description: Guidelines for onboarding, login, welcome tutorials, and account setup flows. Focuses on progressive disclosure, social vs email auth, and activation. Use when designing user registration, login interfaces, or first-time user tutorials.
 ---
 
-# Nisal Onboarding Design Guardian
+# NJ Onboarding Design Guardian
 
 ## Purpose
 This skill establishes premium UX design conventions for user onboarding, account registration, authentication (login/signup), and interactive welcome tours to maximize user activation and reduce drop-off.
@@ -44,6 +44,30 @@ This skill establishes premium UX design conventions for user onboarding, accoun
 - Use interactive welcome flows (carousels or card sweeps) with a prominent `Skip` button in the top-right corner.
 - Ensure the final step of the welcome flow has a strong, high-contrast Call to Action (CTA) button to get started immediately (e.g., `"Get Started"`, `"Explore Dashboard"`).
 
+
+
+## Code Examples
+
+### React Multi-Step Progress Indicator
+```tsx
+import React from 'react';
+
+export function OnboardingProgress({ currentStep, totalSteps }: { currentStep: number; totalSteps: number }) {
+  return (
+    <div className="onboarding-progress-bar">
+      <div className="progress-track">
+        <div 
+          className="progress-fill" 
+          style={{ width: `${(currentStep / totalSteps) * 100}%` }}
+        />
+      </div>
+      <div className="steps-indicator">
+        Step {currentStep} of {totalSteps}
+      </div>
+    </div>
+  );
+}
+```
 
 ## Strict Guardrails
 - **NEVER** build a massive single-page onboarding form. It must be broken into a wizard if it has more than 4 inputs.

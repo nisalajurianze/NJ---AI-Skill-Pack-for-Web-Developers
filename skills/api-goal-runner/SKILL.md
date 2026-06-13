@@ -5,6 +5,9 @@ description: Sustained execution workflow for API, backend, integration, automat
 
 # API Goal Runner
 
+## Purpose
+Sustained execution workflow for API, backend, integration, automation, OpenAI API, REST, GraphQL, webhook, server, auth, database, deployment, and bug-fix tasks that the user frames as a goal or asks to continue until done. Use when the user says phrases like "API task ekak", "goal ekak dunnama", "digatama karanna", "stop nokaranna", "nathara karanne nathuwa", "100% iwara wenakam", "complete wenakam", or asks Codex not to stop at planning and to finish the work end to end.
+
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
 1. The user provides an API, backend, or automation goal.

@@ -5,6 +5,9 @@ description: Pre-implementation requirement clarifier and interviewer. Runs at t
 
 # NJ Pre Impl Clarifier
 
+## Purpose
+Pre-implementation requirement clarifier and interviewer. Runs at the start of any new feature/page request, analyzing context, looking up web standards, identifying missing requirements, and interviewing the user before execution.
+
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
 1. The user requests a brand new feature, page, API, or project without providing extremely detailed technical specifications.
@@ -32,6 +35,19 @@ Present your analysis and ask the user for clarification. Do NOT start coding un
 - **Missing Requirements**: Bullet-list critical gaps you found that were not in the prompt.
 - **Recommendations**: Propose suggestions/recommendations based on web standards.
 - **Targeted Questions**: Ask specific multiple-choice or short questions (e.g., "Should we implement rate limits on this login endpoint?").
+
+
+## Code Examples
+
+### interactive Requirement Gathering Prompt
+```markdown
+## Requirement Clarification Interview
+
+Before I begin writing code or plans, please select options or clarify:
+1. **Database Schema**: Should the user table support soft deletes? (e.g. `deletedAt` timestamp)
+2. **Security**: Do we need rate limiting on the new API endpoints?
+3. **UI Layout**: Should loading states use skeleton loaders or simple spinners?
+```
 
 ## Strict Guardrails
 - **NEVER** bypass this pre-flight check for new feature builds. It must run automatically.

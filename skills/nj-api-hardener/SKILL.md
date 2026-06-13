@@ -3,7 +3,7 @@ name: nj-api-hardener
 description: Backend/API hardening workflow for Nisal's Node, Express, Next.js API, server, webhook, auth, database, upload, payment, email, Cloudinary, Resend, PayHere, SMS, Redis, Mongo, and integration tasks. Use when improving API reliability, security, validation, performance, tests, or "backend eka superb karanna".
 ---
 
-# Nisal API Hardener
+# NJ API Hardener
 
 ## Purpose
 

@@ -5,6 +5,9 @@ description: Feature review gatekeeper. Enforces rigorous post-implementation re
 
 # NJ Feature Review Gatekeeper
 
+## Purpose
+Feature review gatekeeper. Enforces rigorous post-implementation reviews of individual pages, features, or tasks before proceeding to the next work item to ensure zero UI/backend gaps and 100% prompt compliance.
+
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
 1. A feature, page, or task has just been marked as completed in the plan/task tracker.
@@ -33,6 +36,20 @@ Enforces a quality check point after completing any single feature, page, or tas
 ### 4. Direct Verification Gate
 - **Execution Run**: Run automated tests, compile scripts, or start the dev server and use automated browser checks to confirm the feature works.
 - **Error Logs**: Inspect console logs and terminal errors for any hidden warnings, runtime exceptions, or linter complaints.
+
+
+## Code Examples
+
+### Post-Implementation Verification Checklist
+```markdown
+## Feature Review Checklist
+
+1. [ ] Prompt Compliance: Verify every single line in USER_REQUEST was addressed.
+2. [ ] Quality Check: Scan for console.logs, trailing debug scripts, and placeholders.
+3. [ ] Mobile Responsive: Check layout scaling down to 320px width using dev tools.
+4. [ ] Accessibility: Ensure all icons have alt tags/aria-hidden and inputs have labels.
+5. [ ] Code Hygiene: Verify code builds cleanly and passes TypeScript typecheck.
+```
 
 ## Strict Guardrails
 - **NEVER** change a checklist item in `task.md` to the next task if the current task's gate review fails.

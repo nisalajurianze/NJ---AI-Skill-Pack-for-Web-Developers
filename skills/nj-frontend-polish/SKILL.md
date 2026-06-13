@@ -3,7 +3,7 @@ name: nj-frontend-polish
 description: Frontend polish, UI quality, responsive design, UX, accessibility, and browser verification workflow for Nisal's React, Vite, Next.js, ecommerce, SaaS, pharmacy, restaurant, admin dashboard, landing page, and portfolio work. Use when the user asks to make UI "superb", beautiful, professional, faster, mobile-friendly, or visually verified.
 ---
 
-# Nisal Frontend Polish
+# NJ Frontend Polish
 
 ## Purpose
 

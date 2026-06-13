@@ -3,7 +3,7 @@ name: nj-ai-engineering-guardian
 description: Guidelines for robust AI engineering, RAG, and LLM optimization in 2026. Covers prompt curation to avoid context collapse, pre/post-generation guardrails, evaluation harnesses, semantic chunking, GraphRAG setups, and cost-control patterns. Use when building AI-powered features, chatbot engines, or RAG platforms.
 ---
 
-# Nisal AI Engineering Guardian
+# NJ AI Engineering Guardian
 
 ## Purpose
 This skill establishes guidelines, code recipes, and checklists for implementing the 9 core AI engineering principles of 2026 to ensure AI features are secure, accurate, cost-effective, and robust.
