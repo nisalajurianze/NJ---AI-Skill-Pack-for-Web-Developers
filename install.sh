@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# Nisal Global Skill Pack Installer (Mac/Linux)
+# NJ Global Skill Pack Installer (Mac/Linux)
 
 SOURCE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/skills"
 GEMINI_DIR="$HOME/.gemini/config/skills"
 CODEX_DIR="$HOME/.codex/skills"
 
 echo -e "\033[1;36m=========================================\033[0m"
-echo -e "\033[1;36m Installing Nisal Global Skill Pack... \033[0m"
+echo -e "\033[1;36m Installing NJ Global Skill Pack... \033[0m"
 echo -e "\033[1;36m=========================================\033[0m"
 
 # Create target directories

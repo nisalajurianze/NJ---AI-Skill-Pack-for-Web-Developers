@@ -1,11 +1,11 @@
-# Nisal Global Skill Pack Installer (Windows)
+# NJ Global Skill Pack Installer (Windows)
 
 $sourceDir = Join-Path $PSScriptRoot "skills"
 $geminiDir = Join-Path $HOME ".gemini\config\skills"
 $codexDir = Join-Path $HOME ".codex\skills"
 
 Write-Host "=========================================" -ForegroundColor Cyan
-Write-Host " Installing Nisal Global Skill Pack... " -ForegroundColor Cyan
+Write-Host " Installing NJ Global Skill Pack... " -ForegroundColor Cyan
 Write-Host "=========================================" -ForegroundColor Cyan
 
 # Create target directories if they don't exist

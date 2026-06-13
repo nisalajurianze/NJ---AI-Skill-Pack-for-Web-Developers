@@ -60,12 +60,20 @@ Before installing, ensure you have one of the following AI Assistants or IDEs co
 
 You can install all 36 skills globally to your IDE/AI assistant in seconds.
 
-### Windows (PowerShell)
+### 1. Clone the Repository
+```bash
+git clone https://github.com/nisalajurianze/NJ---AI-Skill-Pack-for-Web-Developers.git
+cd "NJ---AI-Skill-Pack-for-Web-Developers"
+```
+
+### 2. Run the Installer
+
+**Windows (PowerShell)**
 ```powershell
 .\install.ps1
 ```
 
-### macOS / Linux (Bash)
+**macOS / Linux (Bash)**
 ```bash
 ./install.sh
 ```
