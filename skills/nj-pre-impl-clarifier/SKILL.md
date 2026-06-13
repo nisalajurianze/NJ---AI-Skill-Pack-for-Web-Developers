@@ -18,7 +18,7 @@ Prevents incomplete, insecure, or substandard implementations by analyzing proje
 
 ### 1. Codebase & Context Inventory
 - Inspect the codebase structure, technologies, frameworks, and existing files.
-- Refer to active quality playbooks (e.g., `WEB_PROJECT_QUALITY_PLAYBOOK.md`).
+- Refer to active project documentation and guidelines (e.g., coding standards or rules if present).
 
 ### 2. Web Standards & Best Practice Search
 - Run a targeted web search using the `search_web` tool for best practices, architectural patterns, and standard features for the requested item.
