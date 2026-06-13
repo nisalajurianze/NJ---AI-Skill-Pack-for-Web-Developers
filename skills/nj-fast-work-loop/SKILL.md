@@ -59,5 +59,5 @@ Slow down and use deeper review for security, payment, auth, database migrations
 - **NEVER** browse the web for stable facts already present in the repo or installed skills.
 - **NEVER** run full builds repeatedly when a targeted test is enough.
 - **NEVER** retry the exact same failing command without fundamentally changing the code or environment.
-- **NEVER** apply this skill to tasks involving security, payment, auth, database migrations, or production deploys (use `$nisal-deploy-guardian` or `$nisal-security-performance-sweep` instead).
+- **NEVER** apply this skill to tasks involving security, payment, auth, database migrations, or production deploys (use `$nj-deploy-guardian` or `$nj-security-performance-sweep` instead).
 

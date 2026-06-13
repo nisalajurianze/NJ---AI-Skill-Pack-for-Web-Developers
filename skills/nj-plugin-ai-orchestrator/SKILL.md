@@ -23,7 +23,7 @@ Use this skill to decide when to invoke plugins/connectors and when to ask anoth
 2. Use local files, installed skills, and deterministic commands first for stable repo facts.
 3. Use plugin/app tools when they directly access data or perform actions that local commands cannot.
 4. Use external AI only when the task is hard enough or the user explicitly requests it.
-5. Use `$nisal-auto-planner` when plugin/model use is part of a multi-step implementation.
+5. Use `$nj-auto-planner` when plugin/model use is part of a multi-step implementation.
 6. Record what was used and why in the final answer when it changes the outcome.
 
 ## Plugin Routing

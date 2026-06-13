@@ -20,14 +20,14 @@ Use this pack to combine installed Codex skills, local CLIs, and connector-aware
 
 ## Default Operating Mode
 
-1. Use `$nisal-auto-skill-runner` when the user asks to automatically use the right skills, says "auto skill use karanna", or gives a broad task where Codex should choose skills proactively.
+1. Use `$nj-auto-skill-runner` when the user asks to automatically use the right skills, says "auto skill use karanna", or gives a broad task where Codex should choose skills proactively.
 2. Use `$api-goal-runner` when the user gives an API/backend/integration task as a goal, says "API task ekak", "goal ekak dunnama", "digatama karanna", "stop nokaranna", or wants execution to continue until verified.
-3. Use `$nisal-auto-planner` when the user asks for auto planning, a roadmap, a goal plan, or the task has multiple meaningful steps.
-4. Use `$nisal-specialist-router` when the user asks for special agents, many skills, "hama dema balala", or broad multi-domain execution.
-5. Use `$nisal-plugin-ai-orchestrator` when the user asks to use plugins/connectors or external AI support such as Opus 4.8, Claude Code, OpenCode, or other models.
-6. Use `$nisal-repo-memory` when the work touches Nisal's previous repos or prior Codex project context.
-7. Use `$nisal-fast-work-loop` when the user asks to work quickly, reduce cost, or avoid wasting time.
-8. Use `$run-to-completion` and `$nisal-large-prompt-phased-executor` immediately and automatically when the user gives a large roadmap, long prompt, or says to continue until finished.
+3. Use `$nj-auto-planner` when the user asks for auto planning, a roadmap, a goal plan, or the task has multiple meaningful steps.
+4. Use `$nj-specialist-router` when the user asks for special agents, many skills, "hama dema balala", or broad multi-domain execution.
+5. Use `$nj-plugin-ai-orchestrator` when the user asks to use plugins/connectors or external AI support such as Opus 4.8, Claude Code, OpenCode, or other models.
+6. Use `$nj-repo-memory` when the work touches Nisal's previous repos or prior Codex project context.
+7. Use `$nj-fast-work-loop` when the user asks to work quickly, reduce cost, or avoid wasting time.
+8. Use `$run-to-completion` and `$nj-large-prompt-phased-executor` immediately and automatically when the user gives a large roadmap, long prompt, or says to continue until finished.
 9. Use `$opus-4-8-mode` when the user asks for Claude Opus, Opus 4.8, "best model", "deep thinking", or Opus-style work.
 10. Inventory the repo first: files, package managers, scripts, framework, deployment target, auth/storage providers, and existing docs.
 11. Choose the narrowest relevant specialist skill:
@@ -44,35 +44,35 @@ Use this pack to combine installed Codex skills, local CLIs, and connector-aware
 
 Use these custom skills before broader generic work when their trigger matches:
 
-- `$nisal-specialist-router`: choose specialist skills for multi-domain tasks.
-- `$nisal-auto-skill-runner`: automatically choose and coordinate the right skills for broad tasks.
-- `$nisal-auto-planner`: create and maintain concise live plans for multi-step work.
-- `$nisal-plugin-ai-orchestrator`: route plugin/connector use and external AI support.
-- `$nisal-code-quality-guardian`: improve maintainability, correctness, architecture, and tests.
-- `$nisal-fast-work-loop`: speed up work with parallel inspection and smallest useful verification.
-- `$nisal-repo-memory`: apply known context for Nisal repos and prior Codex work.
-- `$nisal-api-hardener`: harden API/backend/auth/database/webhook/upload/payment flows.
-- `$nisal-frontend-polish`: improve UI/UX, responsiveness, accessibility, and browser-verified polish.
-- `$nisal-test-failure-fixer`: debug failing tests, builds, typechecks, CI, and smoke checks.
-- `$nisal-deploy-guardian`: protect release/deploy/env/domain/CI work.
-- `$nisal-security-performance-sweep`: inspect and fix security/performance risks.
-- `$nisal-roadmap-keeper`: preserve small details across long roadmaps.
-- `$nisal-mock-and-seed`: manage database seeds or mock external services (Resend, PayHere, Cloudinary).
-- `$nisal-git-guardian`: format commit messages, name branches, and write Pull Request summaries.
-- `$nisal-onboarding-design-guardian`: design welcome tours, progressive disclosures, and clean auth screens.
-- `$nisal-checkout-payment-design-guardian`: design secure shopping checkouts, payment gateway loadings, and pricing paywalls.
-- `$nisal-search-filter-design-guardian`: design category chips, search bars, auto-suggestions, and responsive filter sheets.
-- `$nisal-account-profile-design-guardian`: design grouped settings navigation, profile edit forms, and danger zones.
-- `$nisal-ui-elements-design-guardian`: design modals, bottom sheets, toast notifications, and glassmorphism styling.
-- `$nisal-landing-page-design-guardian`: design landing pages (Hero, Features, Pricing) in Minimal, Brutalist, and Editorial styles with 3D and animated effects.
-- `$nisal-motionsites-design-guardian`: design premium motionsites.ai-inspired interactive pages, mesh gradients, spotlight grids, card tilts, and border sweeps.
-- `$nisal-webgl-3d-design-guardian`: design 3D interactive models, camera parallax tracking, and optimize WebGL rendering performance.
-- `$nisal-design-engineer-guardian`: engineer modular React components, Radix accessibility, and AI prompt-friendly shadcn styling.
-- `$nisal-ai-engineering-guardian`: design robust RAG, semantic chunking, prompt curation context, output guardrails, and automated eval harnesses.
-- `$nisal-large-prompt-phased-executor`: divide large prompts into neat sequential phases and auto-run them step-by-step.
-- `$nisal-feature-review-gatekeeper`: verify completed features/pages against user prompts before moving to new tasks to ensure zero code or visual gaps.
-- `$nisal-image-prompt-analyst`: analyze user-submitted images with no text instructions and interview the user to clarify scope.
-- `$nisal-pre-impl-clarifier`: analyze codebase & web standards at the start of any new request, find missing prompt requirements, and interview the user with recommendations.
+- `$nj-specialist-router`: choose specialist skills for multi-domain tasks.
+- `$nj-auto-skill-runner`: automatically choose and coordinate the right skills for broad tasks.
+- `$nj-auto-planner`: create and maintain concise live plans for multi-step work.
+- `$nj-plugin-ai-orchestrator`: route plugin/connector use and external AI support.
+- `$nj-code-quality-guardian`: improve maintainability, correctness, architecture, and tests.
+- `$nj-fast-work-loop`: speed up work with parallel inspection and smallest useful verification.
+- `$nj-repo-memory`: apply known context for Nisal repos and prior Codex work.
+- `$nj-api-hardener`: harden API/backend/auth/database/webhook/upload/payment flows.
+- `$nj-frontend-polish`: improve UI/UX, responsiveness, accessibility, and browser-verified polish.
+- `$nj-test-failure-fixer`: debug failing tests, builds, typechecks, CI, and smoke checks.
+- `$nj-deploy-guardian`: protect release/deploy/env/domain/CI work.
+- `$nj-security-performance-sweep`: inspect and fix security/performance risks.
+- `$nj-roadmap-keeper`: preserve small details across long roadmaps.
+- `$nj-mock-and-seed`: manage database seeds or mock external services (Resend, PayHere, Cloudinary).
+- `$nj-git-guardian`: format commit messages, name branches, and write Pull Request summaries.
+- `$nj-onboarding-design-guardian`: design welcome tours, progressive disclosures, and clean auth screens.
+- `$nj-checkout-payment-design-guardian`: design secure shopping checkouts, payment gateway loadings, and pricing paywalls.
+- `$nj-search-filter-design-guardian`: design category chips, search bars, auto-suggestions, and responsive filter sheets.
+- `$nj-account-profile-design-guardian`: design grouped settings navigation, profile edit forms, and danger zones.
+- `$nj-ui-elements-design-guardian`: design modals, bottom sheets, toast notifications, and glassmorphism styling.
+- `$nj-landing-page-design-guardian`: design landing pages (Hero, Features, Pricing) in Minimal, Brutalist, and Editorial styles with 3D and animated effects.
+- `$nj-motionsites-design-guardian`: design premium motionsites.ai-inspired interactive pages, mesh gradients, spotlight grids, card tilts, and border sweeps.
+- `$nj-webgl-3d-design-guardian`: design 3D interactive models, camera parallax tracking, and optimize WebGL rendering performance.
+- `$nj-design-engineer-guardian`: engineer modular React components, Radix accessibility, and AI prompt-friendly shadcn styling.
+- `$nj-ai-engineering-guardian`: design robust RAG, semantic chunking, prompt curation context, output guardrails, and automated eval harnesses.
+- `$nj-large-prompt-phased-executor`: divide large prompts into neat sequential phases and auto-run them step-by-step.
+- `$nj-feature-review-gatekeeper`: verify completed features/pages against user prompts before moving to new tasks to ensure zero code or visual gaps.
+- `$nj-image-prompt-analyst`: analyze user-submitted images with no text instructions and interview the user to clarify scope.
+- `$nj-pre-impl-clarifier`: analyze codebase & web standards at the start of any new request, find missing prompt requirements, and interview the user with recommendations.
 - `$caveman`: compress output text, save tokens/credits, write brief comments or commits when token savings are needed.
 - `$codeburn`: analyze session token usage, lifetime token costs, and model metrics.
 
@@ -136,7 +136,7 @@ Do not mark a setup as complete until:
 ```
 
 ## Strict Guardrails
-- **NEVER** use generic platforms (like ChatGPT or Web Search) for facts that are already defined in local custom `nisal-*` skills.
+- **NEVER** use generic platforms (like ChatGPT or Web Search) for facts that are already defined in local custom `nj-*` skills.
 - **NEVER** leave a dev server running if verification is done.
 - **NEVER** repeat a failed command blindly without inspecting logs and changing one thing.
 

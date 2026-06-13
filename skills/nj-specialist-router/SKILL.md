@@ -20,19 +20,19 @@ Use this skill to choose the smallest useful set of specialist skills and tools 
 
 1. **Identify the task type** before editing.
 2. **Pick one primary specialist skill** and at most three companion skills unless the task is a large roadmap.
-3. **Auto-run on Large Prompts**: Immediately and automatically load and execute `nisal-large-prompt-phased-executor` as the primary coordinator as soon as a large, complex, or multi-step prompt is given.
-4. **Auto-run Feature Review Gate**: Automatically trigger and run `nisal-feature-review-gatekeeper` whenever a page, feature, or task is marked as finished, before moving to any other task, to ensure 100% prompt matching, no bugs/gaps, and clean UI/backend code.
-5. **Auto-run Image Analyst**: Automatically trigger and execute `nisal-image-prompt-analyst` whenever the user uploads an image with no instructions.
-6. **Auto-run Pre-Implementation Clarifier**: Automatically execute `nisal-pre-impl-clarifier` immediately at the start of any new build or refactor request.
+3. **Auto-run on Large Prompts**: Immediately and automatically load and execute `nj-large-prompt-phased-executor` as the primary coordinator as soon as a large, complex, or multi-step prompt is given.
+4. **Auto-run Feature Review Gate**: Automatically trigger and run `nj-feature-review-gatekeeper` whenever a page, feature, or task is marked as finished, before moving to any other task, to ensure 100% prompt matching, no bugs/gaps, and clean UI/backend code.
+5. **Auto-run Image Analyst**: Automatically trigger and execute `nj-image-prompt-analyst` whenever the user uploads an image with no instructions.
+6. **Auto-run Pre-Implementation Clarifier**: Automatically execute `nj-pre-impl-clarifier` immediately at the start of any new build or refactor request.
 
 ### Skill Matrix Selection
-- **API/backend goal**: `$api-goal-runner`, `$nisal-api-hardener`, `$nisal-ai-engineering-guardian`, `$nisal-test-failure-fixer`.
-- **Auto skill selection**: `$nisal-auto-skill-runner`, `$nisal-specialist-router`, `$nisal-work-pack`.
-- **Auto planning/roadmap**: `$nisal-auto-planner`, `$nisal-roadmap-keeper`, `$run-to-completion`, `$nisal-large-prompt-phased-executor`, `$nisal-pre-impl-clarifier`.
-- **Code quality/refactor**: `$nisal-code-quality-guardian`, `$react-best-practices`, `$nextjs`, `$workers-best-practices`.
-- **Frontend/UI polish**: `$nisal-frontend-polish`, `$verification`, `$agent-browser-verify`, `$shadcn`.
-- **Tests/build failures**: `$nisal-test-failure-fixer`, `$gh-fix-ci`, `$verification`, `$nisal-feature-review-gatekeeper`.
-- **Product/design**: `$figma-use`, `$figma-generate-design`, `$nisal-motionsites-design-guardian`, `$nisal-webgl-3d-design-guardian`, `$nisal-design-engineer-guardian`, `$nisal-image-prompt-analyst`.
+- **API/backend goal**: `$api-goal-runner`, `$nj-api-hardener`, `$nj-ai-engineering-guardian`, `$nj-test-failure-fixer`.
+- **Auto skill selection**: `$nj-auto-skill-runner`, `$nj-specialist-router`, `$nj-work-pack`.
+- **Auto planning/roadmap**: `$nj-auto-planner`, `$nj-roadmap-keeper`, `$run-to-completion`, `$nj-large-prompt-phased-executor`, `$nj-pre-impl-clarifier`.
+- **Code quality/refactor**: `$nj-code-quality-guardian`, `$react-best-practices`, `$nextjs`, `$workers-best-practices`.
+- **Frontend/UI polish**: `$nj-frontend-polish`, `$verification`, `$agent-browser-verify`, `$shadcn`.
+- **Tests/build failures**: `$nj-test-failure-fixer`, `$gh-fix-ci`, `$verification`, `$nj-feature-review-gatekeeper`.
+- **Product/design**: `$figma-use`, `$figma-generate-design`, `$nj-motionsites-design-guardian`, `$nj-webgl-3d-design-guardian`, `$nj-design-engineer-guardian`, `$nj-image-prompt-analyst`.
 
 
 ## Code Examples

@@ -31,29 +31,29 @@ Use this skill to turn a broad user request into the right active skill set. Cho
 
 Use this baseline when the user gives a broad task and does not name exact skills:
 
-- Coordination: `$nisal-work-pack`, `$nisal-specialist-router`.
-- Planning: `$nisal-auto-planner`, `$nisal-roadmap-keeper`.
-- Speed: `$nisal-fast-work-loop`.
-- API/backend: `$api-goal-runner`, `$nisal-api-hardener`.
-- Quality/refactor: `$nisal-code-quality-guardian`.
-- Frontend/UI: `$nisal-frontend-polish`, `$verification`, `$agent-browser-verify`.
-- Tests/builds: `$nisal-test-failure-fixer`.
-- Deploy/release: `$nisal-deploy-guardian`.
-- Security/performance: `$nisal-security-performance-sweep`.
-- Plugins/external AI: `$nisal-plugin-ai-orchestrator`, `$opus-4-8-mode`.
-- Repo memory: `$nisal-repo-memory`.
+- Coordination: `$nj-work-pack`, `$nj-specialist-router`.
+- Planning: `$nj-auto-planner`, `$nj-roadmap-keeper`.
+- Speed: `$nj-fast-work-loop`.
+- API/backend: `$api-goal-runner`, `$nj-api-hardener`.
+- Quality/refactor: `$nj-code-quality-guardian`.
+- Frontend/UI: `$nj-frontend-polish`, `$verification`, `$agent-browser-verify`.
+- Tests/builds: `$nj-test-failure-fixer`.
+- Deploy/release: `$nj-deploy-guardian`.
+- Security/performance: `$nj-security-performance-sweep`.
+- Plugins/external AI: `$nj-plugin-ai-orchestrator`, `$opus-4-8-mode`.
+- Repo memory: `$nj-repo-memory`.
 
 ## Skill Choice Rules
 
-- If the request says "API", "backend", "auth", "DB", "webhook", "payment", or "goal", use `$api-goal-runner` and `$nisal-api-hardener`.
-- If the request has more than two meaningful steps, use `$nisal-auto-planner`.
-- If the request says "superb widiyata", "code quality", "clean", "refactor", or "best practice", use `$nisal-code-quality-guardian`.
-- If the request touches UI, layout, responsive behavior, browser checks, or visual polish, use `$nisal-frontend-polish`.
-- If tests, build, typecheck, CI, or errors fail, use `$nisal-test-failure-fixer`.
-- If deploy, env vars, domains, Vercel, Railway, Cloudflare, release, or production is involved, use `$nisal-deploy-guardian`.
-- If security, performance, rate limits, validation, secrets, or abuse risk is involved, use `$nisal-security-performance-sweep`.
-- If plugins/connectors, GitHub, Vercel, Cloudflare, Figma, OpenAI, Cloudinary, browser automation, or external AI models are involved, use `$nisal-plugin-ai-orchestrator`.
-- If the user asks to use previous work or all known repos, use `$nisal-repo-memory`.
+- If the request says "API", "backend", "auth", "DB", "webhook", "payment", or "goal", use `$api-goal-runner` and `$nj-api-hardener`.
+- If the request has more than two meaningful steps, use `$nj-auto-planner`.
+- If the request says "superb widiyata", "code quality", "clean", "refactor", or "best practice", use `$nj-code-quality-guardian`.
+- If the request touches UI, layout, responsive behavior, browser checks, or visual polish, use `$nj-frontend-polish`.
+- If tests, build, typecheck, CI, or errors fail, use `$nj-test-failure-fixer`.
+- If deploy, env vars, domains, Vercel, Railway, Cloudflare, release, or production is involved, use `$nj-deploy-guardian`.
+- If security, performance, rate limits, validation, secrets, or abuse risk is involved, use `$nj-security-performance-sweep`.
+- If plugins/connectors, GitHub, Vercel, Cloudflare, Figma, OpenAI, Cloudinary, browser automation, or external AI models are involved, use `$nj-plugin-ai-orchestrator`.
+- If the user asks to use previous work or all known repos, use `$nj-repo-memory`.
 
 ## Operating Rules
 

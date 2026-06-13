@@ -15,7 +15,7 @@ Combined security and performance review workflow for Nisal's full-stack apps. U
 2. The user uses phrases like "podi podi than pawa hodata balanna", indicating a deep audit is needed.
 3. You are modifying high-risk surfaces: auth flows, checkout/payments, file uploads, or public webhooks.
 
-Use this skill to catch high-impact security and performance issues before shipping. Pair with `$security-scan`, `$web-perf`, `$nisal-api-hardener`, and `$nisal-frontend-polish` as needed.
+Use this skill to catch high-impact security and performance issues before shipping. Pair with `$security-scan`, `$web-perf`, `$nj-api-hardener`, and `$nj-frontend-polish` as needed.
 
 ## Sweep Order
 

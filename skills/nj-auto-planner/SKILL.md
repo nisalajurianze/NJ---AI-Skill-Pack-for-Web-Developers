@@ -59,12 +59,12 @@ For larger tasks, group by outcomes:
 
 Use companion skills based on the plan:
 
-- `$nisal-specialist-router` for multi-domain skill selection.
-- `$nisal-auto-skill-runner` when the user expects skills to be chosen automatically.
-- `$nisal-roadmap-keeper` for large roadmaps and small-detail tracking.
+- `$nj-specialist-router` for multi-domain skill selection.
+- `$nj-auto-skill-runner` when the user expects skills to be chosen automatically.
+- `$nj-roadmap-keeper` for large roadmaps and small-detail tracking.
 - `$api-goal-runner` for API/backend goals that should continue until verified.
-- `$nisal-fast-work-loop` when speed and cost matter.
-- `$nisal-plugin-ai-orchestrator` when plugins, connectors, or external AI may help.
+- `$nj-fast-work-loop` when speed and cost matter.
+- `$nj-plugin-ai-orchestrator` when plugins, connectors, or external AI may help.
 - `$run-to-completion` when the user asks to continue until done.
 
 ## Completion Audit
