@@ -214,7 +214,12 @@ Got a new standard or pattern you want to enforce? Contributions are welcome!
 
 ## 📸 Screenshots
 
-*(Add screenshots of your AI seamlessly handling a complex multi-step build using the `nj-global-orchestrator`, or automatically identifying a UI fix via `nj-frontend-polish`!)*
+### Cross-Platform Installation
+Below is the execution of the unified installer (`node install.js`) setting up the global skill directories across all supported environments:
+
+<p align="center">
+  <img src="./media/installer_success.png" alt="Successful Skill Pack Installation" width="100%" />
+</p>
 
 ---
 
