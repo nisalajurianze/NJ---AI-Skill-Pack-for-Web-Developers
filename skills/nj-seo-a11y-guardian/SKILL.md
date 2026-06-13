@@ -1,7 +1,9 @@
 ---
-name: nisal-seo-a11y-guardian
+name: nj-seo-a11y-guardian
 description: Guidelines for implementing flawless SEO metadata, JSON-LD structured data, Open Graph tags, and strict WCAG accessibility (a11y) standards (ARIA, keyboard navigation). Use when finalizing page layouts or structuring Next.js/React applications for search engines and screen readers.
 ---
+
+# NJ Seo A11y Guardian
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**

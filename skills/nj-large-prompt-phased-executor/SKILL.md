@@ -1,7 +1,9 @@
 ---
-name: nisal-large-prompt-phased-executor
+name: nj-large-prompt-phased-executor
 description: Phased execution orchestrator for large, complex prompts. Divides tasks into neat logical phases, executing and verifying them one-by-one according to a structured task checklist.
 ---
+
+# NJ Large Prompt Phased Executor
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**

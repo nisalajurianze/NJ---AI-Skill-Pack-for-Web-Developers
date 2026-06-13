@@ -1,5 +1,5 @@
-﻿---
-name: nisal-search-filter-design-guardian
+---
+name: nj-search-filter-design-guardian
 description: Guidelines for search bars, auto-suggestions, category filters, bottom sheet mobile filters, web sidebar filters, and sort controls. Use when designing search inputs, filter overlays, or listings pages.
 ---
 
@@ -38,7 +38,7 @@ This skill establishes conventions for designing user-friendly search interfaces
 ## 3. Sorting Mechanics
 
 - Present sort controls cleanly, either as a dropdown selector (web) or a bottom-sheet segmented control (mobile).
-- Place the sort selector near the results count (e.g., `"124 results found â€” Sort by: Popularity"`).
+- Place the sort selector near the results count (e.g., `"124 results found — Sort by: Popularity"`).
 - Keep sorting options concise (usually 3 to 5 options, e.g., Price: Low to High, Price: High to Low, Newest, Most Popular).
 
 

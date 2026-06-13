@@ -1,5 +1,5 @@
-﻿---
-name: nisal-git-guardian
+---
+name: nj-git-guardian
 description: Git branching, commit styling (Conventional Commits), and automatic PR summary/template generation standards for Nisal's repositories. Use when staging changes, making git commits, creating branches, or writing PR descriptions.
 ---
 

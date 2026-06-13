@@ -1,11 +1,13 @@
-﻿---
-name: nisal-security-performance-sweep
+---
+name: nj-security-performance-sweep
 description: Combined security and performance review workflow for Nisal's full-stack apps. Use when the user asks for security, performance, speed, optimization, production hardening, "podi podi than pawa hodata balanna", audits, API/web risks, Lighthouse, database hot paths, bundle size, auth, payments, uploads, or compliance-sensitive checks.
 ---
 
 # Nisal Security Performance Sweep
 
 ## Purpose
+
+Combined security and performance review workflow for Nisal's full-stack apps. Use when the user asks for security, performance, speed, optimization, production hardening, "podi podi than pawa hodata balanna", audits, API/web risks, Lighthouse, database hot paths, bundle size, auth, payments, uploads, or compliance-sensitive checks.
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
@@ -49,6 +51,21 @@ Use this skill to catch high-impact security and performance issues before shipp
 Lead with critical issues and exact file references when reviewing. If fixing, verify each fixed issue with tests, commands, or a concrete local check.
 
 
+
+## Code Examples
+
+### Basic Security Headers
+```typescript
+import helmet from 'helmet';
+import cors from 'cors';
+
+// Apply basic security sweeps
+app.use(helmet());
+app.use(cors({
+  origin: process.env.ALLOWED_ORIGIN,
+  credentials: true
+}));
+```
 
 ## Strict Guardrails
 - **NEVER** ignore rate limits on auth, OTP, or checkout routes. If missing, flag them as critical vulnerabilities.

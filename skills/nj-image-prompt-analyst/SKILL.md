@@ -1,7 +1,9 @@
 ---
-name: nisal-image-prompt-analyst
+name: nj-image-prompt-analyst
 description: Image prompt analyst and clarifier. Automatically triggers when a user uploads/inputs an image with no instructions, analyzing it deeply and interviewing the user to clarify requirements.
 ---
+
+# NJ Image Prompt Analyst
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**

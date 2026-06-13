@@ -1,5 +1,5 @@
-﻿---
-name: nisal-work-pack
+---
+name: nj-work-pack
 description: Coordinated execution pack for Nisal's coding, product, design, deployment, security, API, code-quality, auto-planning, auto-skill-selection, plugin, specialist-agent, and AI-development work. Use when the user asks to inspect all repos, use previous work, create or use special agents/skills, automatically use the right skills, auto-plan work, improve code quality, work faster, reduce credit usage, improve performance, use plugins/connectors, get external AI support such as Opus 4.8, increase thinking quality or creativity, use GitHub/Vercel/Cloudflare/Figma/OpenAI capabilities, use Claude Code/opencode-style CLIs, or run a large roadmap to completion.
 ---
 
@@ -28,7 +28,7 @@ Use this pack to combine installed Codex skills, local CLIs, and connector-aware
 9. Use `$opus-4-8-mode` when the user asks for Claude Opus, Opus 4.8, "best model", "deep thinking", or Opus-style work.
 10. Inventory the repo first: files, package managers, scripts, framework, deployment target, auth/storage providers, and existing docs.
 11. Choose the narrowest relevant specialist skill:
-   - Nisal custom: `$nisal-auto-skill-runner`, `$nisal-auto-planner`, `$nisal-plugin-ai-orchestrator`, `$nisal-code-quality-guardian`, `$nisal-api-hardener`, `$nisal-frontend-polish`, `$nisal-test-failure-fixer`, `$nisal-deploy-guardian`, `$nisal-security-performance-sweep`, `$nisal-roadmap-keeper`, `$nisal-mock-and-seed`, `$nisal-git-guardian`, `$nisal-onboarding-design-guardian`, `$nisal-checkout-payment-design-guardian`, `$nisal-search-filter-design-guardian`, `$nisal-account-profile-design-guardian`, `$nisal-ui-elements-design-guardian`, `$nisal-landing-page-design-guardian`, `$nisal-motionsites-design-guardian`, `$nisal-webgl-3d-design-guardian`, `$nisal-design-engineer-guardian`, `$nisal-ai-engineering-guardian`, `$nisal-large-prompt-phased-executor`, `$nisal-feature-review-gatekeeper`, `$nisal-image-prompt-analyst`, `$nisal-pre-impl-clarifier`, `$nisal-analytics-insight-engine`, `$caveman`, `$codeburn`.
+   - Custom Skills: `$nj-auto-skill-runner`, `$nj-auto-planner`, `$nj-plugin-ai-orchestrator`, `$nj-code-quality-guardian`, `$nj-api-hardener`, `$nj-frontend-polish`, `$nj-test-failure-fixer`, `$nj-deploy-guardian`, `$nj-security-performance-sweep`, `$nj-roadmap-keeper`, `$nj-mock-and-seed`, `$nj-git-guardian`, `$nj-onboarding-design-guardian`, `$nj-checkout-payment-design-guardian`, `$nj-search-filter-design-guardian`, `$nj-account-profile-design-guardian`, `$nj-ui-elements-design-guardian`, `$nj-landing-page-design-guardian`, `$nj-motionsites-design-guardian`, `$nj-webgl-3d-design-guardian`, `$nj-design-engineer-guardian`, `$nj-ai-engineering-guardian`, `$nj-large-prompt-phased-executor`, `$nj-feature-review-gatekeeper`, `$nj-image-prompt-analyst`, `$nj-pre-impl-clarifier`, `$caveman`, `$codeburn`.
    - GitHub: `$github`, `$gh-fix-ci`, `$gh-address-comments`.
    - Vercel/web app: `$nextjs`, `$vercel-cli`, `$deployments-cicd`, `$env-vars`, `$ai-sdk`, `$shadcn`, `$verification`, `$agent-browser-verify`.
    - Cloudflare: `$cloudflare`, `$wrangler`, `$workers-best-practices`, `$durable-objects`, `$cloudflare-agents-sdk`, `$web-perf`.
@@ -73,17 +73,11 @@ Use these custom skills before broader generic work when their trigger matches:
 - `$caveman`: compress output text, save tokens/credits, write brief comments or commits when token savings are needed.
 - `$codeburn`: analyze session token usage, lifetime token costs, and model metrics.
 
-## Nisal Repo Map
+## Project Repo Map
 
-When the current repo is one of Nisal's GitHub repos, use this routing before broad exploration:
+When the current repo is one of your known projects, refer to `$nj-repo-memory` for project-specific memory routing and architecture guidelines before broad exploration.
 
-- `Project-First`: NJ Store ecommerce monorepo under `ecommerce/`. React/Vite store and admin clients, Express/TypeScript API, shared packages, Playwright/Vitest, Vercel frontends, Railway/server deploy config, Redis/Mongo/Cloudinary/Google auth/email. Start with `$react-best-practices`, `$vercel-cli`, `$deployments-cicd`, `$env-vars`, `$security-scan`, `$verification`, and `$ai-sdk` only when the `ai` package or AI behavior is part of the task.
-- `Profile.lk`: multi-tenant SaaS with Next.js web app, Express/TypeScript API, shared package, Docker local workflow, Cloudinary/Resend/PayHere/SMS/DNS/AI envs. Start with `$nextjs`, `$vercel-cli`, `$env-vars`, `$security-scan`, `$openai-platform-api-key` or `$openai-agents-sdk` only for AI features, and `$verification` for app changes.
-- `phamacy-`: pharmacy platform with Vite store/admin apps, Express API, Mongo, Cloudinary, Resend, Google auth, web push, Railway backend and Vercel frontends. Start with `$react-best-practices`, `$vercel-cli`, `$deployments-cicd`, `$security-scan`, `$verification`, and the Cloudinary plugin for media-library work.
-- `PaSSSna-MERN`: restaurant MERN recreation with Vite customer/admin modes, Express/Mongo/Socket.IO API, Cloudinary, Resend, Stripe-ready payment flow, Docker, Railway backend, Vercel frontend split. Start with `$react-best-practices`, `$vercel-cli`, `$deployments-cicd`, `$security-scan`, `$verification`, and payment/email skills when those integrations are touched.
-- `Lost-and-found-System`: currently an empty GitHub repository. If work starts here, bootstrap only after confirming the intended stack.
-
-Repository clones for inventory may live under `github-repos/` in the active Codex workspace. Treat them as working copies, not as the user's production source of truth unless the user explicitly asks to edit or publish from those clones.
+Repository clones for inventory may live under separate directories in the active workspace. Treat them as working copies, not as the production source of truth unless the user explicitly asks to edit or publish from those clones.
 
 ## Credit And Cost Control
 
@@ -112,7 +106,7 @@ Repository clones for inventory may live under `github-repos/` in the active Cod
 
 Claude Code is available if `claude --version` works. Use it only when the user explicitly wants Claude Code, Anthropic/Opus exploration, or a second local CLI pass. Do not claim a specific model such as Opus is available until the CLI/account confirms it.
 
-OpenCode is configured with an OpenRouter credential. Verified model names include `openrouter/anthropic/claude-opus-4.8`, `openrouter/anthropic/claude-opus-4.8-fast`, and `openrouter/~anthropic/claude-opus-latest`. Use `$opus-4-8-mode` to decide whether to call these models or emulate the workflow locally.
+OpenCode/OpenRouter can be configured with credentials. Verified model names structure: `openrouter/<provider>/<model-name>`. Use `$opus-4-8-mode` to decide whether to call high-end models or emulate the workflow locally.
 
 If opencode/openclu-style commands are requested, first verify the command exists. If missing, install or repair the launcher through an approved package source, then run `opencode --version`.
 

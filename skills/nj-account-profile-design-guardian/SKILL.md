@@ -1,5 +1,5 @@
-﻿---
-name: nisal-account-profile-design-guardian
+---
+name: nj-account-profile-design-guardian
 description: Guidelines for user profile pages, account settings (grouped navigation, switches), notifications panels, and security danger zones. Use when designing user profiles, account management dashboards, or settings panels.
 ---
 

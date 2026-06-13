@@ -1,5 +1,5 @@
-﻿---
-name: nisal-ai-engineering-guardian
+---
+name: nj-ai-engineering-guardian
 description: Guidelines for robust AI engineering, RAG, and LLM optimization in 2026. Covers prompt curation to avoid context collapse, pre/post-generation guardrails, evaluation harnesses, semantic chunking, GraphRAG setups, and cost-control patterns. Use when building AI-powered features, chatbot engines, or RAG platforms.
 ---
 
@@ -35,7 +35,7 @@ function curateChatHistory(messages, maxTokens = 4000) {
   // Start from newest messages and work backwards
   for (let i = messages.length - 1; i >= 0; i--) {
     const msg = messages[i];
-    // Rough estimate: 1 word â‰ˆ 1.3 tokens
+    // Rough estimate: 1 word ≈ 1.3 tokens
     const estTokens = Math.ceil(msg.content.split(/\s+/).length * 1.3);
     
     if (tokenCount + estTokens > maxTokens) {

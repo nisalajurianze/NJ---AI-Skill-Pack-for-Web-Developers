@@ -1,5 +1,5 @@
-﻿---
-name: nisal-motionsites-design-guardian
+---
+name: nj-motionsites-design-guardian
 description: Guidelines for premium motionsites.ai-inspired design systems, containing copy-paste CSS and JS recipes for animated backgrounds (mesh gradients, spotlight grids), 3D card tilt effects, text border light sweeps, glowing CTA buttons, and high-contrast dark modes. Use when creating modern, motion-rich landing pages, portfolios, or SaaS dashboards.
 ---
 

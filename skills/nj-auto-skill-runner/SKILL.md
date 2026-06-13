@@ -1,11 +1,13 @@
-﻿---
-name: nisal-auto-skill-runner
+---
+name: nj-auto-skill-runner
 description: Automatic Codex skill selection and skill-use workflow for Nisal's tasks. Use when the user says "auto skill use karanna", "skills automatically use karanna", "wenam skill ekak one", "best skills tika use karanna", "hama skill ekama balala right ewa use karanna", or gives a broad coding/product/API/frontend/deploy/security task where Codex should proactively choose, load, and coordinate the right skills without waiting for the user to name them.
 ---
 
 # Nisal Auto Skill Runner
 
 ## Purpose
+
+Automatic Codex skill selection and skill-use workflow for Nisal's tasks. Use when the user says "auto skill use karanna", "skills automatically use karanna", "wenam skill ekak one", "best skills tika use karanna", "hama skill ekama balala right ewa use karanna", or gives a broad coding/product/API/frontend/deploy/security task where Codex should proactively choose, load, and coordinate the right skills without waiting for the user to name them.
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**

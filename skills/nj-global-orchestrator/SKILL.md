@@ -1,37 +1,39 @@
 ---
-name: nisal-global-orchestrator
-description: Global orchestrator skill for Nisal's workspace. Automatically routes and manages all of Nisal's coding, planning, security, frontend, deploy, and API tasks by selecting, loading, and running the correct set of skills. Use this for general execution where Codex needs to automatically coordinate multi-domain skills.
+name: nj-global-orchestrator
+description: Global orchestrator skill. Automatically routes and manages all coding, planning, security, frontend, deploy, and API tasks by selecting, loading, and running the correct set of skills. Use this for general execution where the AI needs to automatically coordinate multi-domain skills.
 ---
+
+# NJ Global Orchestrator
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
 1. The user provides a multi-domain or complex task (e.g., "build a full stack app").
 2. The agent needs to coordinate multiple specific skills.
-3. General execution begins for Nisal's workspace tasks.
+3. General execution begins for workspace tasks.
 
 ## Operational Instructions
-This skill coordinates the execution of all tasks by dynamically selecting, loading, and executing the appropriate custom skills installed in `C:\Users\nisal\.codex\skills/`.
+This skill coordinates the execution of all tasks by dynamically selecting, loading, and executing the appropriate custom skills installed in `<your-skills-dir>/`.
 
 ### 1. Analyze User Request
 Identify the primary domains involved (e.g., API, Backend, Frontend/UI, Security, Testing, Deployment, or general refactoring).
 
 ### 2. Select Skills
 Select the primary skill and companion skills from the installed set:
-- **Coordination**: `nisal-work-pack`, `nisal-specialist-router`
-- **Planning**: `nisal-auto-planner`, `nisal-roadmap-keeper`, `nisal-large-prompt-phased-executor`, `nisal-pre-impl-clarifier`
-- **Speed/Credit-control**: `nisal-fast-work-loop`, `caveman`, `codeburn`
-- **API/Backend/Testing**: `api-goal-runner`, `nisal-api-hardener`, `nisal-mock-and-seed`, `nisal-ai-engineering-guardian`
-- **Frontend/UI**: `nisal-frontend-polish`
-- **Design/UX/Wow**: `nisal-onboarding-design-guardian`, `nisal-checkout-payment-design-guardian`, `nisal-search-filter-design-guardian`, `nisal-account-profile-design-guardian`, `nisal-ui-elements-design-guardian`, `nisal-landing-page-design-guardian`, `nisal-motionsites-design-guardian`, `nisal-webgl-3d-design-guardian`, `nisal-design-engineer-guardian`, `nisal-image-prompt-analyst`
-- **Git/Workflow**: `nisal-git-guardian`
-- **Tests/CI**: `nisal-test-failure-fixer`, `nisal-feature-review-gatekeeper`
-- **Deploy**: `nisal-deploy-guardian`
-- **Security/Performance**: `nisal-security-performance-sweep`
-- **Plugins/Connectors**: `nisal-plugin-ai-orchestrator`
-- **Repo Memory**: `nisal-repo-memory`
+- **Coordination**: `nj-work-pack`, `nj-specialist-router`
+- **Planning**: `nj-auto-planner`, `nj-roadmap-keeper`, `nj-large-prompt-phased-executor`, `nj-pre-impl-clarifier`
+- **Speed/Credit-control**: `nj-fast-work-loop`, `caveman`, `codeburn`
+- **API/Backend/Testing**: `api-goal-runner`, `nj-api-hardener`, `nj-mock-and-seed`, `nj-ai-engineering-guardian`
+- **Frontend/UI**: `nj-frontend-polish`
+- **Design/UX/Wow**: `nj-onboarding-design-guardian`, `nj-checkout-payment-design-guardian`, `nj-search-filter-design-guardian`, `nj-account-profile-design-guardian`, `nj-ui-elements-design-guardian`, `nj-landing-page-design-guardian`, `nj-motionsites-design-guardian`, `nj-webgl-3d-design-guardian`, `nj-design-engineer-guardian`, `nj-image-prompt-analyst`
+- **Git/Workflow**: `nj-git-guardian`
+- **Tests/CI**: `nj-test-failure-fixer`, `nj-feature-review-gatekeeper`
+- **Deploy**: `nj-deploy-guardian`
+- **Security/Performance**: `nj-security-performance-sweep`
+- **Plugins/Connectors**: `nj-plugin-ai-orchestrator`
+- **Repo Memory**: `nj-repo-memory`
 
 ### 3. Load & Execute
-For each selected skill, read and follow the instructions defined in `C:\Users\nisal\.codex\skills/<skill-name>/SKILL.md`. Implement a concise plan, run the necessary commands, verify the output, and ensure the task is completely finished.
+For each selected skill, read and follow the instructions defined in `<your-skills-dir>/<skill-name>/SKILL.md`. Implement a concise plan, run the necessary commands, verify the output, and ensure the task is completely finished.
 
 ## Strict Guardrails
 - **NEVER** ignore the skills matrix. Always route to the specific guardian for the domain being worked on.

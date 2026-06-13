@@ -1,11 +1,13 @@
-﻿---
-name: nisal-api-hardener
+---
+name: nj-api-hardener
 description: Backend/API hardening workflow for Nisal's Node, Express, Next.js API, server, webhook, auth, database, upload, payment, email, Cloudinary, Resend, PayHere, SMS, Redis, Mongo, and integration tasks. Use when improving API reliability, security, validation, performance, tests, or "backend eka superb karanna".
 ---
 
 # Nisal API Hardener
 
 ## Purpose
+
+Backend/API hardening workflow for Nisal's Node, Express, Next.js API, server, webhook, auth, database, upload, payment, email, Cloudinary, Resend, PayHere, SMS, Redis, Mongo, and integration tasks. Use when improving API reliability, security, validation, performance, tests, or "backend eka superb karanna".
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
@@ -48,13 +50,30 @@ Use `$api-goal-runner` as a companion when the user frames the API work as a goa
 - Upload endpoints accepting unsafe file type, size, or owner.
 - Admin routes that trust client-provided role/user fields.
 - Cloudinary/Resend/PayHere/SMS integrations missing retries, webhook verification, or error logging.
-- Multi-tenant Profile.lk routes that forget profile owner or domain boundaries.
+- Multi-tenant routes that forget owner or domain boundaries.
 
 ## Verification
 
 Prefer targeted API tests first. If live services are required, mock safely or report the exact missing credential/service while still verifying local logic.
 
 
+
+## Code Examples
+
+### Secure Express Route with Zod Validation
+```typescript
+import { z } from 'zod';
+import rateLimit from 'express-rate-limit';
+
+const limiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 100 });
+
+app.post('/api/auth/login', limiter, async (req, res) => {
+  const schema = z.object({ email: z.string().email(), password: z.string().min(8) });
+  const result = schema.safeParse(req.body);
+  if (!result.success) return res.status(400).json({ error: result.error });
+  // Process safely...
+});
+```
 
 ## Strict Guardrails
 - **NEVER** commit secrets or log tokens, passwords, cookies, or API keys.

@@ -1,11 +1,13 @@
-﻿---
-name: nisal-auto-planner
+---
+name: nj-auto-planner
 description: Automatic planning and plan-maintenance workflow for Nisal's tasks. Use when the user asks for auto planning, "auto planning", "plan eka hadanna", "wade organize karanna", "roadmap", "goal", "hama dema step by step", "digatama karanna", or when a coding/product task has multiple meaningful steps and needs a concise live plan that updates as work progresses.
 ---
 
 # Nisal Auto Planner
 
 ## Purpose
+
+Automatic planning and plan-maintenance workflow for Nisal's tasks. Use when the user asks for auto planning, "auto planning", "plan eka hadanna", "wade organize karanna", "roadmap", "goal", "hama dema step by step", "digatama karanna", or when a coding/product task has multiple meaningful steps and needs a concise live plan that updates as work progresses.
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**

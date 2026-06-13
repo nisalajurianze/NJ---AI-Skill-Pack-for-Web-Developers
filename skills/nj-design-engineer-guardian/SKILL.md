@@ -1,5 +1,5 @@
-﻿---
-name: nisal-design-engineer-guardian
+---
+name: nj-design-engineer-guardian
 description: Guidelines for premium shadcn-style modular React components, utility merging, Radix UI primitive patterns, and AI prompt-friendly component registry practices. Use when building reusable React UI kits, component libraries, or SaaS design systems.
 ---
 

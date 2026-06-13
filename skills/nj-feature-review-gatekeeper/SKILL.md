@@ -1,7 +1,9 @@
 ---
-name: nisal-feature-review-gatekeeper
+name: nj-feature-review-gatekeeper
 description: Feature review gatekeeper. Enforces rigorous post-implementation reviews of individual pages, features, or tasks before proceeding to the next work item to ensure zero UI/backend gaps and 100% prompt compliance.
 ---
+
+# NJ Feature Review Gatekeeper
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**

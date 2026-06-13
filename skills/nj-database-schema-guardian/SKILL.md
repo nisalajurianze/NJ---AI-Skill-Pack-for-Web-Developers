@@ -1,7 +1,9 @@
 ---
-name: nisal-database-schema-guardian
+name: nj-database-schema-guardian
 description: Guidelines for designing robust, scalable database schemas (Prisma, Mongoose, Drizzle). Focuses on soft deletes, UUID/CUID indexing, relational integrity, timestamps, and scalable connection pooling patterns. Use when designing or migrating database models.
 ---
+
+# NJ Database Schema Guardian
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**

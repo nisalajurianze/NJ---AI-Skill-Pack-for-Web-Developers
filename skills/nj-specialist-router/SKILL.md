@@ -1,7 +1,9 @@
 ---
-name: nisal-specialist-router
+name: nj-specialist-router
 description: Specialist-skill routing layer for Nisal's work. Use when the user asks for "special agents", "eka eka dewal walata agentla", "best skill use karanna", "auto skill use karanna", "skills automatically use karanna", "hama dema balala", "auto planning", "plugin use karanna", "AI support ganna", "superb widiyata", broad repo work, or any task that needs choosing multiple skills across planning, code quality, API, frontend, deployment, security, performance, GitHub, Vercel, Cloudflare, Figma, OpenAI, documents, or spreadsheets.
 ---
+
+# NJ Specialist Router
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**

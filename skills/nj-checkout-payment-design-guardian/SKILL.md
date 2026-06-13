@@ -1,5 +1,5 @@
-﻿---
-name: nisal-checkout-payment-design-guardian
+---
+name: nj-checkout-payment-design-guardian
 description: Guidelines for cart flows, checkout, wallets, cashback, and subscription paywalls. Focuses on trust cues, payment methods (PayHere, card), and conversion optimization. Use when building ecommerce checkouts or paywall pages.
 ---
 

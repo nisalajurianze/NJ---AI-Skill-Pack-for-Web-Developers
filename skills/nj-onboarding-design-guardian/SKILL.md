@@ -1,5 +1,5 @@
-﻿---
-name: nisal-onboarding-design-guardian
+---
+name: nj-onboarding-design-guardian
 description: Guidelines for onboarding, login, welcome tutorials, and account setup flows. Focuses on progressive disclosure, social vs email auth, and activation. Use when designing user registration, login interfaces, or first-time user tutorials.
 ---
 

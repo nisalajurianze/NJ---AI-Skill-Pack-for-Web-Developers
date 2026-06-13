@@ -1,11 +1,13 @@
-﻿---
-name: nisal-plugin-ai-orchestrator
+---
+name: nj-plugin-ai-orchestrator
 description: Plugin, connector, tool, and external-AI orchestration for Nisal's work. Use when the user asks to use plugins, "plugin use karanna", "AI support ganna", "Opus 4.8", Claude Code, OpenCode, other AI models, special agents, app connectors, GitHub/Vercel/Cloudflare/Figma/Cloudinary/Browser/OpenAI tools, or when a task would benefit from authenticated external tools or a second model pass.
 ---
 
 # Nisal Plugin AI Orchestrator
 
 ## Purpose
+
+Plugin, connector, tool, and external-AI orchestration for Nisal's work. Use when the user asks to use plugins, "plugin use karanna", "AI support ganna", "Opus 4.8", Claude Code, OpenCode, other AI models, special agents, app connectors, GitHub/Vercel/Cloudflare/Figma/Cloudinary/Browser/OpenAI tools, or when a task would benefit from authenticated external tools or a second model pass.
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
@@ -47,12 +49,12 @@ Use this skill to decide when to invoke plugins/connectors and when to ask anoth
 
 ## External AI Routing
 
-Use `$opus-4-8-mode` for Opus-class reasoning. Verified OpenCode/OpenRouter model names from prior setup:
+Use `$opus-4-8-mode` for high-quality reasoning. Example OpenRouter model name patterns:
 
 ```text
-openrouter/anthropic/claude-opus-4.8
-openrouter/anthropic/claude-opus-4.8-fast
-openrouter/~anthropic/claude-opus-latest
+openrouter/<provider>/<model-name>
+openrouter/<provider>/<model-name-fast>
+openrouter/~<provider>/<model-latest>
 ```
 
 Use external AI for:

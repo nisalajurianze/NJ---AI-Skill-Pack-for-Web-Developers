@@ -3,6 +3,8 @@ name: run-to-completion
 description: Autonomous execution workflow for large prompts, roadmaps, multi-step tasks, and "keep going until done" requests. Use when the user asks Codex to finish a big task end to end, says not to stop until it is 100% complete, gives broad approval for necessary actions, or uses similar Romanized Sinhala phrasing such as "100% iwara wenakam", "nathara karanne nathuwa", "road map ekak", "loku prompt ekak", or "approval eka tiyenawa".
 ---
 
+# Run To Completion
+
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
 1. The user provides a multi-step task or a roadmap and says "run to completion".

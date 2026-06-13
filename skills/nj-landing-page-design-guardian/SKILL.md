@@ -1,5 +1,5 @@
-﻿---
-name: nisal-landing-page-design-guardian
+---
+name: nj-landing-page-design-guardian
 description: Guidelines for high-converting marketing pages (Hero, Features, Pricing sections) in Minimal, Brutalist, and Editorial styles, with explicit rules for superb modern 3D transforms, CSS animations, and wow-factor micro-interactions. Use when designing landing pages, portfolios, or marketing sections.
 ---
 

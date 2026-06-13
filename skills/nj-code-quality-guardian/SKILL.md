@@ -1,11 +1,13 @@
-﻿---
-name: nisal-code-quality-guardian
+---
+name: nj-code-quality-guardian
 description: Code quality improvement workflow for Nisal's repositories. Use when the user asks to improve code quality, "code quality eka wadi karanna", clean architecture, refactor, remove bugs, make code superb, professionalize a repo, reduce technical debt, improve maintainability, or review/repair frontend, backend, shared packages, tests, and configs.
 ---
 
 # Nisal Code Quality Guardian
 
 ## Purpose
+
+Code quality improvement workflow for Nisal's repositories. Use when the user asks to improve code quality, "code quality eka wadi karanna", clean architecture, refactor, remove bugs, make code superb, professionalize a repo, reduce technical debt, improve maintainability, or review/repair frontend, backend, shared packages, tests, and configs.
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
@@ -19,7 +21,7 @@ Use this skill to raise code quality without drifting into unrelated rewrites. I
 
 ## Playbook Enforcement
 
-You must strictly enforce and follow the guidelines and checklists from the **[Web Project Quality Playbook](file:///D:/web%20guide%20doc/WEB_PROJECT_QUALITY_PLAYBOOK.md)**:
+You must strictly enforce and follow the guidelines and checklists from standard Web Project Quality best practices:
 
 ### 1. Frontend & Form Quality
 - **Validation**: All inputs must have client & server-side validation using Zod schemas and React Hook Form. Show clear field-level errors and submit loading states.
@@ -57,6 +59,28 @@ Use the first applicable commands, then move down only if blocked:
 4. API smoke test or browser verification.
 5. Manual inspection with exact remaining risk when credentials or services block runtime checks.
 
+
+## Code Examples
+
+### Clean Component Extraction
+Instead of a massive 500-line file, extract logical blocks:
+```tsx
+// BAD: Everything in one file
+export default function Dashboard() { /* 500 lines */ }
+
+// GOOD: Modularized
+import { DashboardMetrics } from './DashboardMetrics';
+import { DashboardChart } from './DashboardChart';
+
+export default function Dashboard() {
+  return (
+    <div className="flex flex-col gap-4">
+      <DashboardMetrics />
+      <DashboardChart />
+    </div>
+  );
+}
+```
 
 ## Strict Guardrails
 - **NEVER** introduce new generic abstractions if local conventions already exist.

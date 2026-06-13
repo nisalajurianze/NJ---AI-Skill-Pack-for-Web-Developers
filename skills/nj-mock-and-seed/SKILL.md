@@ -1,5 +1,5 @@
-﻿---
-name: nisal-mock-and-seed
+---
+name: nj-mock-and-seed
 description: Database seeding (MongoDB/Redis) and external service mocking (Resend, PayHere, Cloudinary) protocols for local test and development environments. Use when writing tests, setting up local databases, or debugging third-party integrations.
 ---
 

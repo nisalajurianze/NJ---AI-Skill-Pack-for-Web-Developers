@@ -1,11 +1,13 @@
-﻿---
-name: nisal-frontend-polish
+---
+name: nj-frontend-polish
 description: Frontend polish, UI quality, responsive design, UX, accessibility, and browser verification workflow for Nisal's React, Vite, Next.js, ecommerce, SaaS, pharmacy, restaurant, admin dashboard, landing page, and portfolio work. Use when the user asks to make UI "superb", beautiful, professional, faster, mobile-friendly, or visually verified.
 ---
 
 # Nisal Frontend Polish
 
 ## Purpose
+
+Frontend polish, UI quality, responsive design, UX, accessibility, and browser verification workflow for Nisal's React, Vite, Next.js, ecommerce, SaaS, pharmacy, restaurant, admin dashboard, landing page, and portfolio work. Use when the user asks to make UI "superb", beautiful, professional, faster, mobile-friendly, or visually verified.
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
@@ -19,7 +21,7 @@ Use this skill to turn frontend changes into polished, verified UI instead of on
 
 ## Playbook UI & Polish Rules
 
-Follow and verify the UI/UX, mobile-first, and performance checklists in the **[Web Project Quality Playbook](file:///D:/web%20guide%20doc/WEB_PROJECT_QUALITY_PLAYBOOK.md)**:
+Follow and verify the UI/UX, mobile-first, and performance checklists in standard Web Project Quality best practices:
 
 ### 1. Mobile-First Layout & Sizing
 - **Tap Targets**: Ensure all buttons and links have comfortable touch targets (minimum `44x44px`).
@@ -58,6 +60,24 @@ Run the strongest practical set:
 
 Do not claim the UI is polished if it was never rendered and inspected.
 
+
+## Code Examples
+
+### Polished Button with Micro-Interactions
+```tsx
+export function PrimaryButton({ children, onClick }) {
+  return (
+    <button 
+      onClick={onClick}
+      className="px-6 py-2 rounded-full bg-blue-600 text-white font-medium
+                 transition-all duration-200 hover:bg-blue-700 hover:shadow-lg 
+                 active:scale-95 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+    >
+      {children}
+    </button>
+  );
+}
+```
 
 ## Strict Guardrails
 - **NEVER** use generic CSS (`margin-top: 100px;`) to fix alignment issues; use proper flexbox, grid, or padding utilities from the design system.

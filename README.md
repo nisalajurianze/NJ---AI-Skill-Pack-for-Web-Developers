@@ -1,13 +1,16 @@
 # NJ Global Skill Pack for Web Developers
 
+> A highly curated, deeply engineered collection of 36 specialized AI prompt skills and orchestrators designed specifically for Web Developers.
+
 <p align="center">
   <img src="./banner.png" alt="AI Skill Pack for Web Developers Banner" width="100%" />
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/github/v/release/nisalajurianze/NJ---AI-Skill-Pack-for-Web-Developers?label=version&style=flat-square" alt="Version 1.0.0">
   <a href="#-1-click-installation"><img src="https://img.shields.io/badge/install-1--click-brightgreen?style=flat-square" alt="1-Click Install"></a>
   <img src="https://img.shields.io/badge/skills-36_Premium-blue?style=flat-square" alt="36 Skills">
-  <img src="https://img.shields.io/badge/platform-Codex%20%7C%20Gemini%20%7C%20Cursor-orange?style=flat-square" alt="Supported Platforms">
+  <img src="https://img.shields.io/badge/platform-Codex%20%7C%20Gemini%20%7C%20Cursor%20%7C%20Claude-orange?style=flat-square" alt="Supported Platforms">
   <img src="https://img.shields.io/badge/audit-100%25_Pass-success?style=flat-square" alt="Audit Verified">
   <img src="https://img.shields.io/badge/license-MIT-purple?style=flat-square" alt="License">
 </p>
@@ -70,17 +73,63 @@ cd "NJ---AI-Skill-Pack-for-Web-Developers"
 
 ### 2. Run the Installer
 
-**Windows (PowerShell)**
-```powershell
-.\install.ps1
+Make sure you have Node.js installed, then run:
+
+**Global Installation (Default)**
+```bash
+node install.js
 ```
 
-**macOS / Linux (Bash)**
+**Per-Project Local Installation**
+Installs skills locally to the current directory (`.gemini/`, `.cursor/`, etc.):
 ```bash
-./install.sh
+node install.js --local
+```
+
+### 3. Uninstalling
+
+To safely remove the skill pack from your directories without deleting your personal rules:
+```bash
+node install.js --uninstall
 ```
 
 > **Note:** Please restart your AI Assistant (Codex/Gemini/Cursor) after installation to load the new skills.
+
+---
+
+## 🏗️ Architecture & Orchestration Flow
+
+```mermaid
+graph TD
+    User([User Request]) --> GO[nj-global-orchestrator]
+    
+    GO -->|Checks Memory| RM[nj-repo-memory]
+    GO -->|Creates Plan| AP[nj-auto-planner]
+    GO -->|Delegates to| SR[nj-auto-skill-runner]
+    
+    SR -->|UI/UX & Frontend| UI[nj-frontend-polish / nj-design-engineer-guardian]
+    SR -->|Backend & API| API[nj-api-hardener / nj-database-schema-guardian]
+    SR -->|DevOps & Deploy| DEV[nj-deploy-guardian / nj-security-performance-sweep]
+    
+    UI --> FWL[nj-fast-work-loop]
+    API --> FWL
+    DEV --> FWL
+    
+    FWL -->|Verification| TFF[nj-test-failure-fixer]
+    FWL -->|Final Output| Caveman[caveman / terse mode]
+    
+    TFF -.->|Fixes| FWL
+```
+
+---
+
+## 🚀 Quickstart
+
+1. Clone and run `node install.js`.
+2. Open your AI IDE (Cursor/Gemini/Codex) in your web project.
+3. Start a prompt with a high-level goal: 
+   > *"Build a modern SaaS landing page with a 3D hero section. Take it step-by-step and keep going until it's done."*
+4. The orchestrators will automatically create a `task.md`, verify UI requirements, and write the code.
 
 ---
 
@@ -159,19 +208,34 @@ Got a new standard or pattern you want to enforce? Contributions are welcome!
 
 ---
 
+## 📸 Screenshots
+
+*(Add screenshots of your AI seamlessly handling a complex multi-step build using the `nj-global-orchestrator`, or automatically identifying a UI fix via `nj-frontend-polish`!)*
+
+---
+
 ## ❓ FAQ
 
 **Q: My AI isn't recognizing the skills after installation?**  
-**A:** Make sure you completely restart the IDE or terminal running your AI assistant so it can pick up the new files in the `.gemini`/`.codex` directories.
+**A:** Make sure you completely restart the IDE or terminal running your AI assistant. For Cursor, ensure you have enabled rule indexing if prompted.
 
 **Q: Can I modify these skills for my own tech stack?**  
-**A:** Absolutely. The skills are written in standard Markdown YAML. Feel free to tweak the `Strict Guardrails` inside the `skills/` directory to match your team's specific coding guidelines (e.g. enforcing Tailwind instead of vanilla CSS).
+**A:** Absolutely. The skills are written in standard Markdown with YAML frontmatter. Feel free to tweak the `Strict Guardrails` inside the `skills/` directory to match your team's specific coding guidelines (e.g. enforcing Tailwind instead of vanilla CSS).
+
+**Q: Will this use up my AI credits faster?**  
+**A:** Actually, it might save you credits! Skills like `caveman` force the AI to write concise, terse outputs, avoiding token waste. `nj-fast-work-loop` prevents the AI from getting stuck in long, unverified planning loops.
+
+**Q: Is this pack safe to run on enterprise repositories?**  
+**A:** Yes. The skills actively enforce security. `nj-security-performance-sweep` and `nj-api-hardener` force the AI to follow strict OWASP compliance, secure storage practices, and code sanitization before it writes any final logic.
 
 ---
 
 ## 👨‍💻 Author
 
 Created and maintained by **Nisala Jurianze (NJ)**.  
+* [GitHub Profile](https://github.com/nisalajurianze)
+* [LinkedIn](https://www.linkedin.com/in/nisalajurianze/)
+
 If you found this pack helpful in your workflow, please consider giving the repository a ⭐️ on GitHub!
 
 ---

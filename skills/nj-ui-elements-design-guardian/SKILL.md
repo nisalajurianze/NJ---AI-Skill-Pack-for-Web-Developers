@@ -1,5 +1,5 @@
-﻿---
-name: nisal-ui-elements-design-guardian
+---
+name: nj-ui-elements-design-guardian
 description: Design specifications for UI components (bottom sheets, dialogs/modals, toasts/banners, progress bars, carousels, tabs, and buttons). Includes styling specs for glassmorphism, animations, and shadows. Use when designing standalone UI components.
 ---
 

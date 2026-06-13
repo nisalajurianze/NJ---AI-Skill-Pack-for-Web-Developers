@@ -1,11 +1,13 @@
-﻿---
-name: nisal-test-failure-fixer
+---
+name: nj-test-failure-fixer
 description: Focused debugging workflow for failing tests, builds, linters, CI, typechecks, Playwright/Vitest/Jest errors, API smoke failures, Vercel build failures, Railway/Docker issues, and "test fail wenawa fix karanna" requests in Nisal's projects.
 ---
 
 # Nisal Test Failure Fixer
 
 ## Purpose
+
+Focused debugging workflow for failing tests, builds, linters, CI, typechecks, Playwright/Vitest/Jest errors, API smoke failures, Vercel build failures, Railway/Docker issues, and "test fail wenawa fix karanna" requests in Nisal's projects.
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
@@ -45,6 +47,21 @@ Use this skill to turn failures into evidence-driven fixes. The priority is to r
 A failure is fixed only when the failing command passes or the remaining blocker is external and clearly named.
 
 
+
+## Code Examples
+
+### Isolating Flaky Tests
+```typescript
+// Instead of hitting a real database in a unit test:
+vi.mock('../src/db');
+import { getUser } from '../src/db';
+
+test('fetches user correctly', async () => {
+  vi.mocked(getUser).mockResolvedValue({ id: 1, name: 'Alice' });
+  const res = await processUser(1);
+  expect(res.success).toBe(true);
+});
+```
 
 ## Strict Guardrails
 - **NEVER** rewrite tests just to make them pass, unless the test expectation is provably stale or incorrect.

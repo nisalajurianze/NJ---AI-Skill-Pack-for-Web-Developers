@@ -1,11 +1,13 @@
-﻿---
-name: nisal-deploy-guardian
+---
+name: nj-deploy-guardian
 description: Deployment and release-safety workflow for Nisal's Vercel, Railway, Render, Cloudflare Workers, Docker, GitHub Actions, env vars, domains, production/preview deployments, and "deploy karanna", "production ready", "release fix", or CI/CD tasks.
 ---
 
 # Nisal Deploy Guardian
 
 ## Purpose
+
+Deployment and release-safety workflow for Nisal's Vercel, Railway, Render, Cloudflare Workers, Docker, GitHub Actions, env vars, domains, production/preview deployments, and "deploy karanna", "production ready", "release fix", or CI/CD tasks.
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
@@ -42,6 +44,20 @@ Use this skill to prepare, verify, and troubleshoot deployments without risking 
 Use build output, deployment logs, runtime logs, health endpoints, browser checks, and API smoke tests. A deployment is not "done" only because a deploy command was issued.
 
 
+
+## Code Examples
+
+### Validating Environment Variables Before Boot
+```typescript
+const requiredEnvs = ['DATABASE_URL', 'JWT_SECRET', 'NODE_ENV'];
+
+for (const env of requiredEnvs) {
+  if (!process.env[env]) {
+    console.error(`[Deploy Guardian] FATAL: Missing ${env}`);
+    process.exit(1);
+  }
+}
+```
 
 ## Strict Guardrails
 - **NEVER** force-push, reset, or delete deployments unless explicitly asked.

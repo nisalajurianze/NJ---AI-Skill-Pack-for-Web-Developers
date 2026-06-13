@@ -1,7 +1,9 @@
 ---
-name: nisal-state-data-guardian
+name: nj-state-data-guardian
 description: Guidelines for managing frontend global state, data fetching, caching, and optimistic UI updates using React Query (TanStack Query) and Zustand. Prevents prop-drilling and ensures robust error/loading handling. Use when integrating APIs or managing complex UI states.
 ---
+
+# NJ State Data Guardian
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**

@@ -1,7 +1,9 @@
 ---
-name: nisal-pre-impl-clarifier
+name: nj-pre-impl-clarifier
 description: Pre-implementation requirement clarifier and interviewer. Runs at the start of any new feature/page request, analyzing context, looking up web standards, identifying missing requirements, and interviewing the user before execution.
 ---
+
+# NJ Pre Impl Clarifier
 
 ## Trigger Signals
 **ALWAYS AUTO-EXECUTE THIS SKILL WHEN:**
