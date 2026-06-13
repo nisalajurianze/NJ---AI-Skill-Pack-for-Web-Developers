@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Feature Review Gatekeeper"
+  short_description: "Enforces rigorous post-implementation reviews of completed features/pages before moving to next tasks."
+  default_prompt: "Use this skill to audit completed tasks against prompts, verify zero gaps in UI/backend, and test functionality before proceeding."

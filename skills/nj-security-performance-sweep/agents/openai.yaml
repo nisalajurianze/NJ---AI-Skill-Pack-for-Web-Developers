@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Security Performance Sweep"
+  short_description: "Sweep security and performance"
+  default_prompt: "Use $nisal-security-performance-sweep to scan for security and performance issues."

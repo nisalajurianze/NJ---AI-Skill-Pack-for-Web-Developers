@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Search & Filter Design Guardian"
+  short_description: "Applies UX conventions to search bars, filter sidebars, and sort systems."
+  default_prompt: "Design efficient search and filter controls. Implement clear indicators, suggest queries, and structure mobile bottom sheets or web sidebars."

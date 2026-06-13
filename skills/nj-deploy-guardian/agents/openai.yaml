@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Deploy Guardian"
+  short_description: "Protect deploys and releases"
+  default_prompt: "Use $nisal-deploy-guardian to prepare, verify, or fix this deployment."

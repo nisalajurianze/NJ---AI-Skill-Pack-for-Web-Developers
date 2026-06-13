@@ -1,0 +1,4 @@
+interface:
+  display_name: "API Goal Runner"
+  short_description: "Run API goals until verified"
+  default_prompt: "Use $api-goal-runner to complete this API task end to end without stopping at a plan."

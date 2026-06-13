@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Roadmap Keeper"
+  short_description: "Track roadmaps and details"
+  default_prompt: "Use $nisal-roadmap-keeper to turn this roadmap into tracked, verified work."

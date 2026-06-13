@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal API Hardener"
+  short_description: "Harden APIs and backend flows"
+  default_prompt: "Use $nisal-api-hardener to fix and harden this backend/API task."

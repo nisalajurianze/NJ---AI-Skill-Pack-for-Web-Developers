@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Auto Skill Runner"
+  short_description: "Auto-selects the right Codex skills for Nisal tasks."
+  default_prompt: "Use this skill to automatically choose and coordinate the right Codex skills for my task, then execute with planning and verification."

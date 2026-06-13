@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Frontend Polish"
+  short_description: "Polish frontend UI and UX"
+  default_prompt: "Use $nisal-frontend-polish to improve this frontend and verify the UI."

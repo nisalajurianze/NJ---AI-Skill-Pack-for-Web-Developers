@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Git Guardian"
+  short_description: "Applies branch naming, Conventional Commits, and PR writing standards."
+  default_prompt: "Guide Git operations. Ensure branch names are clean and prefixed, commit messages conform to Conventional Commits, and Pull Request summaries are automatically generated."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Image Prompt Analyst"
+  short_description: "Automatically analyzes uninstructed user images and asks clarifying questions to define the project scope."
+  default_prompt: "Use this skill to analyze uploaded screenshots/mockups, outline design patterns, and interview the user before building."

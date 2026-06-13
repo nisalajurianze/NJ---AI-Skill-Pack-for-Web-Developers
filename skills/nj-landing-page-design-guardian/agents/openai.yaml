@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Landing Page Design Guardian"
+  short_description: "Applies UX conventions to marketing pages, 3D transforms, and CSS animations."
+  default_prompt: "Design a high-converting, animated marketing landing page. Implement 3D transforms, text gradient sweeps, floating graphics, and Minimal/Brutalist/Editorial layouts."

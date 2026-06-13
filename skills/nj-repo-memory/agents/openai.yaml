@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Repo Memory"
+  short_description: "Use Nisal project context"
+  default_prompt: "Use $nisal-repo-memory to recognize the repo and apply known project context."

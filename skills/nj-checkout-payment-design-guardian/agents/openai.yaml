@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Checkout & Payment Design Guardian"
+  short_description: "Applies UX conventions to checkout steps and subscription paywalls."
+  default_prompt: "Design a high-converting checkout and subscription pricing matrix. Highlight selected options, show security credentials, and style payment indicators."

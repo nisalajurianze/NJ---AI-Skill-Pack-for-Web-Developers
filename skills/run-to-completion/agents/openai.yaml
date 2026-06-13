@@ -1,0 +1,4 @@
+interface:
+  display_name: "Run to Completion"
+  short_description: "Finish large tasks without step-by-step stopping"
+  default_prompt: "Use $run-to-completion to execute this roadmap fully and keep working until the deliverable is genuinely complete."

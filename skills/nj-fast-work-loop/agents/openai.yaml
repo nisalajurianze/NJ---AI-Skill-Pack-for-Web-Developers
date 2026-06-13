@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Fast Work Loop"
+  short_description: "Ship focused work much faster"
+  default_prompt: "Use $nisal-fast-work-loop to finish this work quickly with focused verification."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Pre-Impl Clarifier"
+  short_description: "Performs pre-flight checks on new prompt requests, scans codebase/standards, and interviews the user for gaps."
+  default_prompt: "Use this skill to identify missing requirements/gaps in new build prompts, look up standards, and interview the user before planning."

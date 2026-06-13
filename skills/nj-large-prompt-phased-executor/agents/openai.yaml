@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Large Prompt Phased Executor"
+  short_description: "Orchestrates phased planning and systematic step-by-step execution for large prompts."
+  default_prompt: "Use this skill to split large prompts into sequential phases, execute them one by one, and audit completeness before finishing."

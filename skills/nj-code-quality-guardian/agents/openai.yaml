@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Code Quality Guardian"
+  short_description: "Raise quality across Nisal repos"
+  default_prompt: "Use $nisal-code-quality-guardian to improve code quality and verify the changes."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Onboarding Design Guardian"
+  short_description: "Applies UX conventions to onboarding, login, and signup flows."
+  default_prompt: "Design a premium, high-converting onboarding and authentication flow. Ensure progressive disclosure, clean social auth headers, and visible password validations."

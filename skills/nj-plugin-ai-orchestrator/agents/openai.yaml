@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Plugin AI Orchestrator"
+  short_description: "Route plugins and external AI"
+  default_prompt: "Use $nisal-plugin-ai-orchestrator to decide which plugins, connectors, tools, or external AI support this task needs."

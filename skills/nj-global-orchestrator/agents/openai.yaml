@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Global Orchestrator"
+  short_description: "Automatically routes, coordinates, and runs Nisal's custom skills."
+  default_prompt: "Act as the global orchestrator. Analyze my request, select the right skills from C:\\Users\\nisal\\.codex\\skills, load their instructions, and execute the task step-by-step."

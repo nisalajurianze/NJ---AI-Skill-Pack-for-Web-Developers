@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Account & Profile Design Guardian"
+  short_description: "Applies UX conventions to user profiles, grouped settings, and danger zones."
+  default_prompt: "Design account dashboards and settings panels. Group actions logically, format toggle inputs, and style danger zone overlays."

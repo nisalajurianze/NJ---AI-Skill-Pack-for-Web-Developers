@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Mock and Seed"
+  short_description: "Handles database seeding and mocking external services."
+  default_prompt: "Manage database seeds and mock configurations. Ensure mock setups are idempotent, protect production files, and mock Resend, PayHere, and Cloudinary APIs."

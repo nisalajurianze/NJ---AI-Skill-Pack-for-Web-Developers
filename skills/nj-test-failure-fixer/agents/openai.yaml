@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Test Failure Fixer"
+  short_description: "Debug and fix failing checks"
+  default_prompt: "Use $nisal-test-failure-fixer to debug and fix these failing tests."

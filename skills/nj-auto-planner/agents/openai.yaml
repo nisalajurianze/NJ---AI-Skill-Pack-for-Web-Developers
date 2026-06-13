@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Auto Planner"
+  short_description: "Keeps concise live plans for Nisal tasks."
+  default_prompt: "Use this skill to create and maintain a concise live plan while executing my task through verification."

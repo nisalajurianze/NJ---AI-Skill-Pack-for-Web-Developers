@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Specialist Router"
+  short_description: "Routes Nisal tasks to specialist Codex skills."
+  default_prompt: "Use this skill to route my task to the smallest useful set of specialist Codex skills and tools."

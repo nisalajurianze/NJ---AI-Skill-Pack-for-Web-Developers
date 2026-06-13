@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal UI Elements Design Guardian"
+  short_description: "Applies specs to UI elements like modals, toast popups, and glassmorphism styling."
+  default_prompt: "Design premium UI elements. Implement blur backdrops, sliding mobile bottom sheets, toast popups, and dark/light glassmorphism CSS panels."

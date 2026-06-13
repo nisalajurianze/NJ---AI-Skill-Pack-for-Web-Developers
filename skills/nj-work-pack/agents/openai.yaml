@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nisal Work Pack"
+  short_description: "Coordinates Nisal skills, tools, and verification."
+  default_prompt: "Use this skill pack to choose the right skills, tools, plugins, and verification path for my coding or product task."
