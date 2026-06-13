@@ -42,65 +42,75 @@ console.log(` NJ Global Skill Pack Installer`);
 console.log(` Mode: ${isUninstall ? 'Uninstall' : 'Install'} (${isLocal ? 'Local' : 'Global'})`);
 console.log(`=========================================\n`);
 
-if (isUninstall) {
-    targetDirs.forEach(dir => {
-        if (fs.existsSync(dir)) {
-            console.log(`[*] Removing skills from ${dir}...`);
-            // We only remove the skills that are part of this pack
-            const skills = fs.readdirSync(sourceDir);
-            skills.forEach(skill => {
-                const targetPath = path.join(dir, skill);
-                if (fs.existsSync(targetPath)) {
-                    fs.rmSync(targetPath, { recursive: true, force: true });
-                }
-            });
-        }
-    });
-    console.log(`\n[+] Uninstallation Complete!`);
-} else {
-    targetDirs.forEach(dir => {
-        if (!fs.existsSync(dir)) {
-            fs.mkdirSync(dir, { recursive: true });
-            console.log(`[+] Created directory: ${dir}`);
-        }
-        
-        console.log(`[*] Copying skills to ${dir}...`);
-        const skills = fs.readdirSync(sourceDir);
-        skills.forEach(skill => {
-            const skillSource = path.join(sourceDir, skill);
-            const skillTarget = path.join(dir, skill);
-            
-            // Backup existing skill if it exists
-            if (fs.existsSync(skillTarget)) {
-                const backupPath = `${skillTarget}.backup`;
-                console.log(`    [i] Backing up existing ${skill} to ${skill}.backup`);
-                if (fs.existsSync(backupPath)) {
-                    fs.rmSync(backupPath, { recursive: true, force: true });
-                }
-                fs.renameSync(skillTarget, backupPath);
+try {
+    if (isUninstall) {
+        targetDirs.forEach(dir => {
+            if (fs.existsSync(dir)) {
+                console.log(`[*] Removing skills from ${dir}...`);
+                const skills = fs.readdirSync(sourceDir);
+                skills.forEach(skill => {
+                    const targetPath = path.join(dir, skill);
+                    if (fs.existsSync(targetPath)) {
+                        fs.rmSync(targetPath, { recursive: true, force: true });
+                    }
+                });
+            }
+        });
+        console.log(`\n[+] Uninstallation Complete!`);
+    } else {
+        targetDirs.forEach(dir => {
+            if (!fs.existsSync(dir)) {
+                fs.mkdirSync(dir, { recursive: true });
+                console.log(`[+] Created directory: ${dir}`);
             }
             
-            // Simple recursive copy
-            const copyRecursiveSync = (src, dest) => {
-                const exists = fs.existsSync(src);
-                const stats = exists && fs.statSync(src);
-                const isDirectory = exists && stats.isDirectory();
-                if (isDirectory) {
-                    if (!fs.existsSync(dest)) fs.mkdirSync(dest);
-                    fs.readdirSync(src).forEach(childItemName => {
-                        copyRecursiveSync(path.join(src, childItemName),
-                                          path.join(dest, childItemName));
-                    });
-                } else {
-                    fs.copyFileSync(src, dest);
+            console.log(`[*] Copying skills to ${dir}...`);
+            const skills = fs.readdirSync(sourceDir);
+            skills.forEach(skill => {
+                const skillSource = path.join(sourceDir, skill);
+                const skillTarget = path.join(dir, skill);
+                
+                // Backup existing skill if it exists
+                if (fs.existsSync(skillTarget)) {
+                    const backupPath = `${skillTarget}.backup`;
+                    console.log(`    [i] Backing up existing ${skill} to ${skill}.backup`);
+                    if (fs.existsSync(backupPath)) {
+                        fs.rmSync(backupPath, { recursive: true, force: true });
+                    }
+                    fs.renameSync(skillTarget, backupPath);
                 }
-            };
-            
-            copyRecursiveSync(skillSource, skillTarget);
+                
+                // Simple recursive copy
+                const copyRecursiveSync = (src, dest) => {
+                    const exists = fs.existsSync(src);
+                    const stats = exists && fs.statSync(src);
+                    const isDirectory = exists && stats.isDirectory();
+                    if (isDirectory) {
+                        if (!fs.existsSync(dest)) fs.mkdirSync(dest);
+                        fs.readdirSync(src).forEach(childItemName => {
+                            copyRecursiveSync(path.join(src, childItemName),
+                                              path.join(dest, childItemName));
+                        });
+                    } else {
+                        fs.copyFileSync(src, dest);
+                    }
+                };
+                
+                copyRecursiveSync(skillSource, skillTarget);
+            });
         });
-    });
-    console.log(`\n=========================================`);
-    console.log(` Installation Complete! `);
-    console.log(` Please restart your AI Assistant to load the new skills.`);
-    console.log(`=========================================\n`);
+        console.log(`\n=========================================`);
+        console.log(` Installation Complete! `);
+        console.log(` Please restart your AI Assistant to load the new skills.`);
+        console.log(`=========================================\n`);
+    }
+} catch (error) {
+    console.error(`\n[FATAL ERROR] Operation failed: ${error.message}`);
+    console.error(`Please make sure you have sufficient read/write permissions to target directories.`);
+    if (process.platform !== 'win32') {
+        console.error(`Try running with elevated privileges: sudo node install.js`);
+    } else {
+        console.error(`Try running your terminal/command prompt as Administrator.`);
+    }
+    process.exit(1);
 }

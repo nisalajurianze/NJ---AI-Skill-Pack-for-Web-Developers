@@ -26,6 +26,28 @@ When triggered, follow this autonomous execution protocol:
 - If a terminal command fails, inspect the stack trace immediately.
 - If an API returns a 500 error, inspect the server logs before making changes.
 
+## Code Examples
+
+### Automated API Health and Test Loop
+```bash
+#!/bin/bash
+# Example test-driven API goal runner execution loop
+echo "Starting API verification loop..."
+while true; do
+  npm run test:api
+  if [ $? -eq 0 ]; then
+    echo "API tests passed. Checking endpoint health..."
+    curl -f http://localhost:3000/api/health
+    if [ $? -eq 0 ]; then
+      echo "Endpoint healthy! Goal achieved."
+      break
+    fi
+  fi
+  echo "Tests failed. Retrying in 5 seconds..."
+  sleep 5
+done
+```
+
 ## Strict Guardrails
 - **NEVER** stop and ask for permission to proceed if the user has explicitly requested end-to-end execution.
 - **NEVER** leave a task incomplete. If you get stuck, run investigation mode, but do not drop the goal.

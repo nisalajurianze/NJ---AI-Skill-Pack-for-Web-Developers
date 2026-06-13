@@ -206,7 +206,7 @@ Below is the full breakdown of every skill included in this pack and exactly wha
 Got a new standard or pattern you want to enforce? Contributions are welcome!
 1. Fork the repository.
 2. Create your skill in the `skills/` directory following the 3-part architecture (`Trigger Signals`, `Operational Instructions`, `Strict Guardrails`).
-3. Run `.\audit-skills.ps1` (or `./audit-skills.sh` if available) to ensure your skill passes the quality checks.
+3. Run `node audit.js` to ensure your skill passes the quality checks.
 4. Open a Pull Request!
 
 ---

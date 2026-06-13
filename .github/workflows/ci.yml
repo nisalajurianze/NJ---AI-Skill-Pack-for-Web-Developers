@@ -20,16 +20,5 @@ jobs:
       - name: Verify Installer
         run: node install.js --local
         
-      - name: Check Frontmatter
-        run: |
-          for file in skills/*/SKILL.md; do
-            if ! grep -q "^name:" "$file"; then
-              echo "Error: $file is missing the 'name:' field in frontmatter"
-              exit 1
-            fi
-            if ! grep -q "^description:" "$file"; then
-              echo "Error: $file is missing the 'description:' field in frontmatter"
-              exit 1
-            fi
-          done
-          echo "All skills passed frontmatter check!"
+      - name: Run Skill Pack Audit
+        run: node audit.js
