@@ -273,7 +273,7 @@ The unified cross-platform `node install.js` script successfully deploys the ski
 
 Created and maintained by **Nisala Jurianze (NJ)**.  
 * [GitHub Profile](https://github.com/nisalajurianze)
-* [LinkedIn](https://www.linkedin.com/in/nisalajurianze/)
+* [LinkedIn](https://www.linkedin.com/in/nisalajurianze)
 
 If you found this pack helpful in your workflow, please consider giving the repository a ⭐️ on GitHub!
 
