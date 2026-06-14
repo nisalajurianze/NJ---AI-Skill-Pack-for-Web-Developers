@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/v/release/nisalajurianze/NJ---AI-Skill-Pack-for-Web-Developers?label=version&style=flat-square" alt="Version 1.0.0">
+  <img src="https://img.shields.io/github/v/release/nisalajurianze/NJ---AI-Skill-Pack-for-Web-Developers?label=version&style=flat-square" alt="Version 2.0.0">
   <a href="#-quick-installation"><img src="https://img.shields.io/badge/install-Quick-brightgreen?style=flat-square" alt="Quick Install"></a>
   <img src="https://img.shields.io/badge/skills-36_Premium-blue?style=flat-square" alt="36 Skills">
   <img src="https://img.shields.io/badge/platform-Codex%20%7C%20Gemini%20%7C%20Cursor%20%7C%20Claude-orange?style=flat-square" alt="Supported Platforms">
