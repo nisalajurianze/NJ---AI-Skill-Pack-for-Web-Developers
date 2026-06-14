@@ -219,7 +219,7 @@ Here is a complete video demonstration showing the **NJ Global Skill Pack** orch
 
 <p align="center">
   <a href="./media/demo.mp4" target="_blank">
-    <img src="./media/video_thumbnail.png" alt="Watch the Demo Video" width="100%" />
+    <img src="./media/video_thumbnail.png" alt="Watch the Demo Video" width="60%" />
   </a>
 </p>
 
