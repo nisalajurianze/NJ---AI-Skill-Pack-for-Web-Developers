@@ -20,3 +20,9 @@ Thumbs.db
 *.log
 scratch/
 brain/
+
+# Local installation skill folders
+.gemini/
+.codex/
+.cursor/
+.claude/
