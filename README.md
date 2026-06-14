@@ -215,10 +215,12 @@ Got a new standard or pattern you want to enforce? Contributions are welcome!
 ## 📸 Screenshots & Demo
 
 ### 🎥 Demo Video
-Here is a complete video demonstration showing the **NJ Global Skill Pack** orchestrating a complex web development workflow from plan creation to execution:
+Here is a complete video demonstration showing the **NJ Global Skill Pack** orchestrating a complex web development workflow from plan creation to execution (click the image below to watch/download):
 
 <p align="center">
-  <video src="./media/demo.mp4" width="100%" controls></video>
+  <a href="./media/demo.mp4" target="_blank">
+    <img src="./media/video_thumbnail.png" alt="Watch the Demo Video" width="100%" />
+  </a>
 </p>
 
 ### 🖼️ Orchestrator in Action
