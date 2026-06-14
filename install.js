@@ -14,7 +14,7 @@ if (!fs.existsSync(sourceDir)) {
     process.exit(1);
 }
 
-// Define target directories
+// Define target directories for skills
 const getTargetDirs = () => {
     if (isLocal) {
         const cwd = process.cwd();
@@ -35,7 +35,30 @@ const getTargetDirs = () => {
     }
 };
 
+// Define global instructions files mapping
+const getGlobalInstructionsMapping = () => {
+    const home = os.homedir();
+    const cwd = process.cwd();
+    
+    if (isLocal) {
+        return [
+            { src: 'global_instructions.md', dest: path.join(cwd, '.gemini', 'config', 'global_instructions.md') },
+            { src: 'global_instructions.md', dest: path.join(cwd, '.codex', 'global_instructions.md') },
+            { src: 'global_instructions.md', dest: path.join(cwd, '.cursorrules') },
+            { src: 'global_instructions.md', dest: path.join(cwd, 'CLAUDE.md') }
+        ];
+    } else {
+        return [
+            { src: 'global_instructions.md', dest: path.join(home, '.gemini', 'config', 'global_instructions.md') },
+            { src: 'global_instructions.md', dest: path.join(home, '.codex', 'global_instructions.md') },
+            { src: 'global_instructions.md', dest: path.join(home, '.cursor', 'rules', 'global_instructions.md') },
+            { src: 'global_instructions.md', dest: path.join(home, '.claude', 'CLAUDE.md') }
+        ];
+    }
+};
+
 const targetDirs = getTargetDirs();
+const globalInstructionsSource = path.join(__dirname, 'global_instructions.md');
 
 console.log(`\n=========================================`);
 console.log(` NJ Global Skill Pack Installer`);
@@ -44,6 +67,7 @@ console.log(`=========================================\n`);
 
 try {
     if (isUninstall) {
+        // Remove skills folders
         targetDirs.forEach(dir => {
             if (fs.existsSync(dir)) {
                 console.log(`[*] Removing skills from ${dir}...`);
@@ -56,8 +80,19 @@ try {
                 });
             }
         });
+
+        // Remove global instructions files
+        const mappings = getGlobalInstructionsMapping();
+        mappings.forEach(mapping => {
+            if (fs.existsSync(mapping.dest)) {
+                console.log(`[*] Removing global instructions from ${mapping.dest}...`);
+                fs.rmSync(mapping.dest, { force: true });
+            }
+        });
+        
         console.log(`\n[+] Uninstallation Complete!`);
     } else {
+        // Install skills folders
         targetDirs.forEach(dir => {
             if (!fs.existsSync(dir)) {
                 fs.mkdirSync(dir, { recursive: true });
@@ -99,6 +134,35 @@ try {
                 copyRecursiveSync(skillSource, skillTarget);
             });
         });
+
+        // Install global instructions files
+        console.log(`\n[*] Copying global instructions and workspace rules...`);
+        const mappings = getGlobalInstructionsMapping();
+        if (fs.existsSync(globalInstructionsSource)) {
+            mappings.forEach(mapping => {
+                const targetParent = path.dirname(mapping.dest);
+                if (!fs.existsSync(targetParent)) {
+                    fs.mkdirSync(targetParent, { recursive: true });
+                    console.log(`[+] Created directory: ${targetParent}`);
+                }
+                
+                // Backup existing file if it exists
+                if (fs.existsSync(mapping.dest)) {
+                    const backupPath = `${mapping.dest}.backup`;
+                    console.log(`    [i] Backing up existing ${path.basename(mapping.dest)} to ${path.basename(mapping.dest)}.backup`);
+                    if (fs.existsSync(backupPath)) {
+                        fs.rmSync(backupPath, { force: true });
+                    }
+                    fs.renameSync(mapping.dest, backupPath);
+                }
+                
+                fs.copyFileSync(globalInstructionsSource, mapping.dest);
+                console.log(`[+] Installed instructions to: ${mapping.dest}`);
+            });
+        } else {
+            console.warn(`[Warning] Source global_instructions.md not found at ${globalInstructionsSource}`);
+        }
+
         console.log(`\n=========================================`);
         console.log(` Installation Complete! `);
         console.log(` Please restart your AI Assistant to load the new skills.`);
