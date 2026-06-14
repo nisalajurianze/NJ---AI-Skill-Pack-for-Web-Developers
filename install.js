@@ -97,6 +97,16 @@ try {
             if (!fs.existsSync(dir)) {
                 fs.mkdirSync(dir, { recursive: true });
                 console.log(`[+] Created directory: ${dir}`);
+            } else {
+                // Clean up any legacy nisal-* or *.backup folders in the target directory
+                const existingItems = fs.readdirSync(dir);
+                existingItems.forEach(item => {
+                    if (item.startsWith('nisal-') || item.endsWith('.backup')) {
+                        const legacyPath = path.join(dir, item);
+                        console.log(`    [i] Cleaned legacy/backup folder: ${item}`);
+                        fs.rmSync(legacyPath, { recursive: true, force: true });
+                    }
+                });
             }
             
             console.log(`[*] Copying skills to ${dir}...`);
@@ -105,14 +115,9 @@ try {
                 const skillSource = path.join(sourceDir, skill);
                 const skillTarget = path.join(dir, skill);
                 
-                // Backup existing skill if it exists
+                // Remove existing skill folder directly if it exists (prevents duplicate indexing in AI assistant)
                 if (fs.existsSync(skillTarget)) {
-                    const backupPath = `${skillTarget}.backup`;
-                    console.log(`    [i] Backing up existing ${skill} to ${skill}.backup`);
-                    if (fs.existsSync(backupPath)) {
-                        fs.rmSync(backupPath, { recursive: true, force: true });
-                    }
-                    fs.renameSync(skillTarget, backupPath);
+                    fs.rmSync(skillTarget, { recursive: true, force: true });
                 }
                 
                 // Simple recursive copy
