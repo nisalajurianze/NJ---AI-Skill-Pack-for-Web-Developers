@@ -212,10 +212,28 @@ Got a new standard or pattern you want to enforce? Contributions are welcome!
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots & Demo
 
-### Cross-Platform Installation
-Below is the execution of the unified installer (`node install.js`) setting up the global skill directories across all supported environments:
+### 🎥 Demo Video
+Here is a complete video demonstration showing the **NJ Global Skill Pack** orchestrating a complex web development workflow from plan creation to execution:
+
+<p align="center">
+  <video src="./media/demo.mp4" width="100%" controls></video>
+</p>
+
+### 🖼️ Orchestrator in Action
+Below is a step-by-step visual walkthrough of the skill pack running seamlessly inside the AI assistant:
+
+| 1. Initiating Orchestration | 2. Reading System Prompts |
+|---|---|
+| ![Orchestration Start](./media/orchestrator_in_action.png) | ![Reading Prompts](./media/orchestrator_scaffolding.png) |
+
+| 3. Generating Code | 4. Verification Check |
+|---|---|
+| ![Generating Code](./media/orchestrator_writing_code.png) | ![Verification](./media/orchestrator_verification.png) |
+
+### 🚀 Successful Global Installation
+The unified cross-platform `node install.js` script successfully deploys the skill pack globally:
 
 <p align="center">
   <img src="./media/installer_success.png" alt="Successful Skill Pack Installation" width="100%" />
